@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
         <title>Stable Insurance</title>
     </head>
     <body>
         <div>
             <h1>Signup</h1>
-            <input placeholder="Email">
-            <input placeholder="TLC License Number">
-            <br>
-            <button>Continue</button>
+            <form action="" method="post">
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.driver_id(placeholder='Driver ID') }}
+                    {{ form.email(placeholder='Email address') }}
+                    <br>
+                    {{ form.submit() }}
+                </p>
+            </form>
         </div>
     </body>
 </html>
