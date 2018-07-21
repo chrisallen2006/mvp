@@ -1,0 +1,426 @@
+Retrieving logs...
+============= i-0779bcf48c61843ad ==============
+-------------------------------------
+/opt/python/log/supervisord.log
+-------------------------------------
+2018-07-21 22:44:32,736 CRIT Supervisor running as root (no user in config file)
+2018-07-21 22:44:32,752 INFO RPC interface 'supervisor' initialized
+2018-07-21 22:44:32,752 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-07-21 22:44:32,752 INFO supervisord started with pid 3004
+2018-07-21 22:44:33,754 INFO spawned: 'httpd' with pid 3088
+2018-07-21 22:44:34,857 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-21 22:45:05,521 INFO stopped: httpd (exit status 0)
+2018-07-21 22:45:06,526 INFO spawned: 'httpd' with pid 3329
+2018-07-21 22:45:07,661 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-21 22:56:01,878 INFO stopped: httpd (exit status 0)
+2018-07-21 22:56:02,882 INFO spawned: 'httpd' with pid 4012
+2018-07-21 22:56:03,952 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-21 23:05:36,640 INFO stopped: httpd (exit status 0)
+2018-07-21 23:05:37,644 INFO spawned: 'httpd' with pid 4651
+2018-07-21 23:05:38,706 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-21 23:10:05,101 INFO stopped: httpd (exit status 0)
+2018-07-21 23:10:06,106 INFO spawned: 'httpd' with pid 5186
+2018-07-21 23:10:07,175 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+
+
+-------------------------------------
+/var/log/httpd/error_log
+-------------------------------------
+[Sat Jul 21 22:44:33.873463 2018] [mpm_prefork:notice] [pid 3088] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Sat Jul 21 22:44:33.873478 2018] [core:notice] [pid 3088] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Jul 21 22:45:05.509413 2018] [mpm_prefork:notice] [pid 3088] AH00169: caught SIGTERM, shutting down
+[Sat Jul 21 22:45:06.661326 2018] [suexec:notice] [pid 3329] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Sat Jul 21 22:45:06.676863 2018] [so:warn] [pid 3329] AH01574: module wsgi_module is already loaded, skipping
+[Sat Jul 21 22:45:06.678866 2018] [http2:warn] [pid 3329] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Sat Jul 21 22:45:06.678875 2018] [http2:warn] [pid 3329] AH02951: mod_ssl does not seem to be enabled
+[Sat Jul 21 22:45:06.679372 2018] [lbmethod_heartbeat:notice] [pid 3329] AH02282: No slotmem from mod_heartmonitor
+[Sat Jul 21 22:45:06.679426 2018] [:warn] [pid 3329] mod_wsgi: Compiled for Python/3.6.2.
+[Sat Jul 21 22:45:06.679429 2018] [:warn] [pid 3329] mod_wsgi: Runtime using Python/3.6.5.
+[Sat Jul 21 22:45:06.681552 2018] [mpm_prefork:notice] [pid 3329] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Sat Jul 21 22:45:06.681567 2018] [core:notice] [pid 3329] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Jul 21 22:45:09.409168 2018] [:error] [pid 3335] [client 127.0.0.1:34466] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:45:10.411365 2018] [:error] [pid 3336] [client 127.0.0.1:34468] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:45:11.413731 2018] [:error] [pid 3337] [client 127.0.0.1:34470] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:45:12.415754 2018] [:error] [pid 3338] [client 127.0.0.1:34472] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:51:16.368339 2018] [:error] [pid 3338] [client 172.31.42.166:36260] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:51:16.649255 2018] [:error] [pid 3338] [client 172.31.42.166:36260] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 22:52:51.994116 2018] [:error] [pid 3339] [client 172.31.42.166:36344] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:52:55.698174 2018] [:error] [pid 3339] [client 172.31.42.166:36344] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:52:55.861586 2018] [:error] [pid 3339] [client 172.31.42.166:36344] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 22:53:19.751002 2018] [:error] [pid 3336] [client 172.31.23.97:30145] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:56:01.818406 2018] [mpm_prefork:notice] [pid 3329] AH00169: caught SIGTERM, shutting down
+[Sat Jul 21 22:56:02.952113 2018] [suexec:notice] [pid 4012] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Sat Jul 21 22:56:02.967077 2018] [so:warn] [pid 4012] AH01574: module wsgi_module is already loaded, skipping
+[Sat Jul 21 22:56:02.968941 2018] [http2:warn] [pid 4012] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Sat Jul 21 22:56:02.968953 2018] [http2:warn] [pid 4012] AH02951: mod_ssl does not seem to be enabled
+[Sat Jul 21 22:56:02.969436 2018] [lbmethod_heartbeat:notice] [pid 4012] AH02282: No slotmem from mod_heartmonitor
+[Sat Jul 21 22:56:02.969502 2018] [:warn] [pid 4012] mod_wsgi: Compiled for Python/3.6.2.
+[Sat Jul 21 22:56:02.969506 2018] [:warn] [pid 4012] mod_wsgi: Runtime using Python/3.6.5.
+[Sat Jul 21 22:56:02.971659 2018] [mpm_prefork:notice] [pid 4012] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Sat Jul 21 22:56:02.971673 2018] [core:notice] [pid 4012] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Jul 21 22:56:05.682210 2018] [:error] [pid 4019] [client 127.0.0.1:34648] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:56:06.684401 2018] [:error] [pid 4020] [client 127.0.0.1:34650] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:56:07.686794 2018] [:error] [pid 4021] [client 127.0.0.1:34652] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 22:56:08.689131 2018] [:error] [pid 4022] [client 127.0.0.1:34654] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:04:02.366962 2018] [:error] [pid 4018] [client 172.31.42.166:37126] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:04:37.878325 2018] [:error] [pid 4021] [client 172.31.42.166:37146] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:04:38.153189 2018] [:error] [pid 4021] [client 172.31.42.166:37146] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:05:36.628414 2018] [mpm_prefork:notice] [pid 4012] AH00169: caught SIGTERM, shutting down
+[Sat Jul 21 23:05:37.706387 2018] [suexec:notice] [pid 4651] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Sat Jul 21 23:05:37.719461 2018] [so:warn] [pid 4651] AH01574: module wsgi_module is already loaded, skipping
+[Sat Jul 21 23:05:37.721179 2018] [http2:warn] [pid 4651] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Sat Jul 21 23:05:37.721187 2018] [http2:warn] [pid 4651] AH02951: mod_ssl does not seem to be enabled
+[Sat Jul 21 23:05:37.721622 2018] [lbmethod_heartbeat:notice] [pid 4651] AH02282: No slotmem from mod_heartmonitor
+[Sat Jul 21 23:05:37.721666 2018] [:warn] [pid 4651] mod_wsgi: Compiled for Python/3.6.2.
+[Sat Jul 21 23:05:37.721669 2018] [:warn] [pid 4651] mod_wsgi: Runtime using Python/3.6.5.
+[Sat Jul 21 23:05:37.723629 2018] [mpm_prefork:notice] [pid 4651] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Sat Jul 21 23:05:37.723648 2018] [core:notice] [pid 4651] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Jul 21 23:05:40.432450 2018] [:error] [pid 4658] [client 127.0.0.1:34788] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:05:41.434716 2018] [:error] [pid 4657] [client 127.0.0.1:34790] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:05:42.436915 2018] [:error] [pid 4659] [client 127.0.0.1:34792] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:05:43.439038 2018] [:error] [pid 4661] [client 127.0.0.1:34794] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:07.081214 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:07.285263 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:06:07.732089 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:07.860417 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:06:08.012912 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:08.161796 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:06:08.169498 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:08.330612 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:08.462533 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:06:08.498435 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:08.624253 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:06:08.696798 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:08.823972 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:06:08.889086 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:06:09.026019 2018] [:error] [pid 4723] [client 172.31.23.97:30839] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:05.089368 2018] [mpm_prefork:notice] [pid 4651] AH00169: caught SIGTERM, shutting down
+[Sat Jul 21 23:10:06.175413 2018] [suexec:notice] [pid 5186] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Sat Jul 21 23:10:06.190807 2018] [so:warn] [pid 5186] AH01574: module wsgi_module is already loaded, skipping
+[Sat Jul 21 23:10:06.193489 2018] [http2:warn] [pid 5186] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Sat Jul 21 23:10:06.193498 2018] [http2:warn] [pid 5186] AH02951: mod_ssl does not seem to be enabled
+[Sat Jul 21 23:10:06.193969 2018] [lbmethod_heartbeat:notice] [pid 5186] AH02282: No slotmem from mod_heartmonitor
+[Sat Jul 21 23:10:06.194021 2018] [:warn] [pid 5186] mod_wsgi: Compiled for Python/3.6.2.
+[Sat Jul 21 23:10:06.194024 2018] [:warn] [pid 5186] mod_wsgi: Runtime using Python/3.6.5.
+[Sat Jul 21 23:10:06.196163 2018] [mpm_prefork:notice] [pid 5186] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Sat Jul 21 23:10:06.196178 2018] [core:notice] [pid 5186] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Sat Jul 21 23:10:08.917961 2018] [:error] [pid 5192] [client 127.0.0.1:34924] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:09.920070 2018] [:error] [pid 5193] [client 127.0.0.1:34926] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:10.922267 2018] [:error] [pid 5194] [client 127.0.0.1:34928] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:11.924269 2018] [:error] [pid 5195] [client 127.0.0.1:34930] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:34.838754 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:35.054930 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:35.387406 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:35.527691 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:35.569335 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:35.760855 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:35.767429 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:35.910483 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.045455 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:36.052439 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.208115 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.341387 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:36.379640 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.516485 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.671852 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+[Sat Jul 21 23:10:36.679939 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.832367 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Sat Jul 21 23:10:36.957512 2018] [:error] [pid 5195] [client 172.31.42.166:37484] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://stable-mvp.us-east-1.elasticbeanstalk.com/
+
+
+
+-------------------------------------
+/var/log/httpd/access_log
+-------------------------------------
+127.0.0.1 (-) - - [21/Jul/2018:22:45:09 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:22:45:10 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:22:45:11 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:22:45:12 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:22:51:16 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:22:51:16 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+::1 (-) - - [21/Jul/2018:22:52:22 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:22:52:51 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:22:52:55 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:22:52:55 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (178.76.65.188) - - [21/Jul/2018:22:53:19 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+::1 (-) - - [21/Jul/2018:22:53:56 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:22:54:20 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:22:54:21 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:22:54:25 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:22:54:26 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+127.0.0.1 (-) - - [21/Jul/2018:22:56:05 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:22:56:06 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:22:56:07 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:22:56:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+172.31.42.166 (164.52.24.163) - - [21/Jul/2018:23:04:02 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:04:37 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:04:38 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+127.0.0.1 (-) - - [21/Jul/2018:23:05:40 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:23:05:41 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:23:05:42 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:23:05:43 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:07 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:07 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:07 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:07 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.23.97 (24.125.167.43) - - [21/Jul/2018:23:06:09 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+::1 (-) - - [21/Jul/2018:23:07:06 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:07 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:08 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:09 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:10 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:11 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:12 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:13 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:14 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:15 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:16 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [21/Jul/2018:23:07:36 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+127.0.0.1 (-) - - [21/Jul/2018:23:10:08 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:23:10:09 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:23:10:10 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 (-) - - [21/Jul/2018:23:10:11 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:34 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:35 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+172.31.42.166 (24.125.167.43) - - [21/Jul/2018:23:10:36 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+[2018-07-21T23:10:01.328Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPreBuild/Infra-EmbeddedPreBuild] : Starting activity...
+[2018-07-21T23:10:01.328Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPreBuild/Infra-EmbeddedPreBuild] : Completed activity.
+[2018-07-21T23:10:01.361Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPreBuild] : Completed activity.
+[2018-07-21T23:10:01.361Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook] : Starting activity...
+[2018-07-21T23:10:01.361Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/01_configure_xray.sh] : Starting activity...
+[2018-07-21T23:10:01.499Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/01_configure_xray.sh] : Completed activity.
+[2018-07-21T23:10:01.499Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/01new.py] : Starting activity...
+[2018-07-21T23:10:01.823Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/01new.py] : Completed activity.
+[2018-07-21T23:10:01.823Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/02unzip.py] : Starting activity...
+[2018-07-21T23:10:02.146Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/02unzip.py] : Completed activity. Result:
+  Archive:  /opt/elasticbeanstalk/deploy/appsource/source_bundle
+  ee932901bd9d47e7336daa7cb26e2fd796c519e2
+    inflating: /opt/python/ondeck/app/.gitignore  
+    inflating: /opt/python/ondeck/app/README.md  
+   extracting: /opt/python/ondeck/app/config.py  
+     creating: /opt/python/ondeck/app/mvp/
+    inflating: /opt/python/ondeck/app/mvp/__init__.py  
+    inflating: /opt/python/ondeck/app/mvp/forms.py  
+   extracting: /opt/python/ondeck/app/mvp/models.py  
+     creating: /opt/python/ondeck/app/mvp/static/
+    inflating: /opt/python/ondeck/app/mvp/static/style.css  
+     creating: /opt/python/ondeck/app/mvp/templates/
+    inflating: /opt/python/ondeck/app/mvp/templates/404.html  
+    inflating: /opt/python/ondeck/app/mvp/templates/index.html  
+    inflating: /opt/python/ondeck/app/mvp/templates/license-found.html  
+    inflating: /opt/python/ondeck/app/mvp/templates/license-not-found.html  
+     creating: /opt/python/ondeck/app/mvp/utils/
+    inflating: /opt/python/ondeck/app/mvp/utils/db_helper.py  
+    inflating: /opt/python/ondeck/app/mvp/utils/quote.py  
+   extracting: /opt/python/ondeck/app/mvp/views.py  
+    inflating: /opt/python/ondeck/app/requirements.in  
+    inflating: /opt/python/ondeck/app/requirements.txt  
+    inflating: /opt/python/ondeck/app/run.py  
+[2018-07-21T23:10:02.146Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/03deploy.py] : Starting activity...
+[2018-07-21T23:10:02.806Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/03deploy.py] : Completed activity. Result:
+  Requirement already satisfied: click==6.7 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 7))
+  Requirement already satisfied: flask-wtf==0.14.2 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 8))
+  Requirement already satisfied: flask==1.0.2 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 9))
+  Requirement already satisfied: itsdangerous==0.24 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 10))
+  Requirement already satisfied: jinja2==2.10 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 11))
+  Requirement already satisfied: markupsafe==1.0 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 12))
+  Requirement already satisfied: werkzeug==0.14.1 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 13))
+  Requirement already satisfied: wtforms==2.2.1 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 14))
+  You are using pip version 9.0.1, however version 10.0.1 is available.
+  You should consider upgrading via the 'pip install --upgrade pip' command.
+[2018-07-21T23:10:02.806Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/04configen.py] : Starting activity...
+[2018-07-21T23:10:04.044Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook/04configen.py] : Completed activity. Result:
+  2018-07-21 23:10:04,038 ERROR    The specified WSGIPath of "application.py" was not found in the source bundle
+[2018-07-21T23:10:04.044Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/AppDeployPreHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/pre.
+[2018-07-21T23:10:04.044Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPostBuild] : Starting activity...
+[2018-07-21T23:10:04.436Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Starting activity...
+[2018-07-21T23:10:04.436Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Completed activity.
+[2018-07-21T23:10:04.451Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/EbExtensionPostBuild] : Completed activity.
+[2018-07-21T23:10:04.451Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/InfraCleanEbextension] : Starting activity...
+[2018-07-21T23:10:04.451Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0/InfraCleanEbextension] : Completed activity. Result:
+  Cleaned ebextensions subdirectories from /opt/python/ondeck/app.
+[2018-07-21T23:10:04.451Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage0] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy stage 0 completed
+[2018-07-21T23:10:04.452Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1] : Starting activity...
+[2018-07-21T23:10:04.452Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook] : Starting activity...
+[2018-07-21T23:10:04.452Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/01flip.py] : Starting activity...
+[2018-07-21T23:10:12.931Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING   pid 5186, uptime 0:00:02
+  2018-07-21 23:10:12,925 INFO     Apache is running, but root page is not responding in 3 seconds.
+[2018-07-21T23:10:12.931Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/01stop_xray.sh] : Starting activity...
+[2018-07-21T23:10:13.037Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/01stop_xray.sh] : Completed activity. Result:
+  Executing: if ( initctl status xray | grep start ); then initctl stop xray; fi
+  
+[2018-07-21T23:10:13.037Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/02create_pids_for_monitoring.sh] : Starting activity...
+[2018-07-21T23:10:13.133Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/02create_pids_for_monitoring.sh] : Completed activity. Result:
+  + chmod 0755 /var/run/httpd
+  + /opt/elasticbeanstalk/bin/healthd-track-pidfile --proxy httpd
+  + /opt/elasticbeanstalk/bin/healthd-track-pidfile --name application --location /opt/python/run/supervisord.pid
+[2018-07-21T23:10:13.133Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/02start_xray.sh] : Starting activity...
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook/02start_xray.sh] : Completed activity.
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployEnactHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/enact.
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployPostHook] : Starting activity...
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1/AppDeployPostHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/post.
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AppDeployStage1] : Completed activity. Result:
+  Application version switch - Command CMD-AppDeploy stage 1 completed
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AddonsAfter] : Starting activity...
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AddonsAfter/ConfigLogRotation] : Starting activity...
+[2018-07-21T23:10:13.234Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AddonsAfter/ConfigLogRotation/10-config.sh] : Starting activity...
+[2018-07-21T23:10:13.309Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AddonsAfter/ConfigLogRotation/10-config.sh] : Completed activity. Result:
+  Disabled forced hourly log rotation.
+[2018-07-21T23:10:13.309Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AddonsAfter/ConfigLogRotation] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logpublish/hooks/config.
+[2018-07-21T23:10:13.309Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4/AddonsAfter] : Completed activity.
+[2018-07-21T23:10:13.309Z] INFO  [5003]  - [Application update app-ee93-180721_190952@4] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy succeeded
+[2018-07-21T23:11:07.333Z] INFO  [5380]  - [CMD-TailLogs] : Starting activity...
+[2018-07-21T23:11:07.334Z] INFO  [5380]  - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2018-07-21T23:11:07.334Z] INFO  [5380]  - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2018-07-21T23:11:07.334Z] INFO  [5380]  - [CMD-TailLogs/TailLogs] : Starting activity...
+[2018-07-21T23:11:07.334Z] INFO  [5380]  - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2018-07-21T23:06:24.886Z] DEBUG [4787]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-07-21T23:06:24.886Z] INFO  [4787]  : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-07-21T23:06:24.887Z] INFO  [4787]  : Updating Command definition of addon logstreaming.
+[2018-07-21T23:06:24.887Z] INFO  [4787]  : Updating Command definition of addon logpublish.
+[2018-07-21T23:06:24.887Z] DEBUG [4787]  : Loaded definition of Command CMD-TailLogs.
+[2018-07-21T23:06:24.887Z] INFO  [4787]  : Executing CMD-TailLogs
+[2018-07-21T23:06:24.888Z] INFO  [4787]  : Executing command: CMD-TailLogs...
+[2018-07-21T23:06:24.888Z] INFO  [4787]  : Executing command CMD-TailLogs activities...
+[2018-07-21T23:06:24.888Z] DEBUG [4787]  : Setting environment variables..
+[2018-07-21T23:06:24.888Z] INFO  [4787]  : Running AddonsBefore for command CMD-TailLogs...
+[2018-07-21T23:06:24.888Z] DEBUG [4787]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2018-07-21T23:06:24.888Z] INFO  [4787]  : Running stage 0 of command CMD-TailLogs...
+[2018-07-21T23:06:24.888Z] DEBUG [4787]  : Loaded 1 actions for stage 0.
+[2018-07-21T23:06:24.888Z] INFO  [4787]  : Running 1 of 1 actions: TailLogs...
+[2018-07-21T23:06:25.087Z] INFO  [4787]  : Running AddonsAfter for command CMD-TailLogs...
+[2018-07-21T23:06:25.087Z] INFO  [4787]  : Command CMD-TailLogs succeeded!
+[2018-07-21T23:06:25.088Z] INFO  [4787]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"[Instance: i-0779bcf48c61843ad] Successfully finished tailing 5 log(s)","severity":"INFO","timestamp":1532214385087}]}]}
+[2018-07-21T23:09:59.538Z] DEBUG [5003]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-07-21T23:09:59.539Z] DEBUG [5003]  : Checking if the command processor should execute...
+[2018-07-21T23:09:59.541Z] DEBUG [5003]  : Checking whether the command is applicable to instance (i-0779bcf48c61843ad)..
+[2018-07-21T23:09:59.541Z] INFO  [5003]  : Command is applicable to this instance (i-0779bcf48c61843ad)..
+[2018-07-21T23:09:59.541Z] DEBUG [5003]  : Checking if the received command stage is valid..
+[2018-07-21T23:09:59.541Z] INFO  [5003]  : No stage_num in command. Valid stage..
+[2018-07-21T23:09:59.541Z] INFO  [5003]  : Received command CMD-AppDeploy: {"execution_data"=>"{\"leader_election\":\"true\"}", "instance_ids"=>["i-0779bcf48c61843ad"], "data"=>"manifest_1532214596566", "command_name"=>"CMD-AppDeploy", "api_version"=>"1.0", "resource_name"=>"AWSEBAutoScalingGroup", "request_id"=>"06f18790-6557-4480-ab88-43501b4f1083"}
+[2018-07-21T23:09:59.541Z] INFO  [5003]  : Command processor should execute command.
+[2018-07-21T23:09:59.541Z] DEBUG [5003]  : Storing current stage..
+[2018-07-21T23:09:59.541Z] DEBUG [5003]  : Stage_num does not exist. Not saving null stage. Returning..
+[2018-07-21T23:09:59.541Z] DEBUG [5003]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-07-21T23:09:59.541Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2018-07-21T23:09:59.542Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-07-21T23:09:59.542Z] INFO  [5003]  : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-07-21T23:09:59.544Z] INFO  [5003]  : Updating Command definition of addon logstreaming.
+[2018-07-21T23:09:59.544Z] INFO  [5003]  : Updating Command definition of addon logpublish.
+[2018-07-21T23:09:59.544Z] DEBUG [5003]  : Refreshing metadata...
+[2018-07-21T23:09:59.923Z] DEBUG [5003]  : Refreshed environment metadata.
+[2018-07-21T23:09:59.923Z] INFO  [5003]  : Recreated directory /opt/elasticbeanstalk/deploy/configuration/.
+[2018-07-21T23:09:59.923Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_AppSourceUrlFileContent||url..
+[2018-07-21T23:09:59.924Z] INFO  [5003]  : Created appsource url file at /opt/elasticbeanstalk/deploy/configuration/appsourceurl.
+[2018-07-21T23:09:59.924Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent..
+[2018-07-21T23:09:59.925Z] INFO  [5003]  : Created container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2018-07-21T23:09:59.925Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2018-07-21T23:09:59.926Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-07-21T23:09:59.926Z] INFO  [5003]  : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-07-21T23:09:59.927Z] INFO  [5003]  : Updating Command definition of addon logstreaming.
+[2018-07-21T23:09:59.927Z] INFO  [5003]  : Updating Command definition of addon logpublish.
+[2018-07-21T23:09:59.927Z] DEBUG [5003]  : Retrieving metadata for key: AWS::CloudFormation::Init||Infra-WriteApplication2||files..
+[2018-07-21T23:09:59.928Z] DEBUG [5003]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||ManifestFileS3Key..
+[2018-07-21T23:10:00.019Z] INFO  [5003]  : Loading manifest from bucket 'elasticbeanstalk-us-east-1-472301744577' using computed S3 key 'resources/environments/e-39kf38c6kb/_runtime/versions/manifest_1532214596566'.
+[2018-07-21T23:10:00.096Z] INFO  [5003]  : Updated manifest cache: deployment ID 4 and serial 4.
+[2018-07-21T23:10:00.096Z] DEBUG [5003]  : Loaded definition of Command CMD-AppDeploy.
+[2018-07-21T23:10:00.097Z] INFO  [5003]  : Executing Application update
+[2018-07-21T23:10:00.097Z] INFO  [5003]  : Executing command: CMD-AppDeploy...
+[2018-07-21T23:10:00.097Z] INFO  [5003]  : Executing command CMD-AppDeploy activities...
+[2018-07-21T23:10:00.097Z] DEBUG [5003]  : Setting environment variables..
+[2018-07-21T23:10:00.097Z] INFO  [5003]  : Running AddonsBefore for command CMD-AppDeploy...
+[2018-07-21T23:10:00.216Z] DEBUG [5003]  : Running stages of Command CMD-AppDeploy from stage 0 to stage 1...
+[2018-07-21T23:10:00.216Z] INFO  [5003]  : Running stage 0 of command CMD-AppDeploy...
+[2018-07-21T23:10:00.216Z] INFO  [5003]  : Running leader election...
+[2018-07-21T23:10:00.603Z] INFO  [5003]  : Instance is Leader.
+[2018-07-21T23:10:00.603Z] DEBUG [5003]  : Loaded 5 actions for stage 0.
+[2018-07-21T23:10:00.603Z] INFO  [5003]  : Running 1 of 5 actions: DownloadSourceBundle...
+[2018-07-21T23:10:00.922Z] INFO  [5003]  : Running 2 of 5 actions: EbExtensionPreBuild...
+[2018-07-21T23:10:01.361Z] INFO  [5003]  : Running 3 of 5 actions: AppDeployPreHook...
+[2018-07-21T23:10:04.044Z] INFO  [5003]  : Running 4 of 5 actions: EbExtensionPostBuild...
+[2018-07-21T23:10:04.451Z] INFO  [5003]  : Running 5 of 5 actions: InfraCleanEbextension...
+[2018-07-21T23:10:04.451Z] INFO  [5003]  : Running stage 1 of command CMD-AppDeploy...
+[2018-07-21T23:10:04.452Z] DEBUG [5003]  : Loaded 2 actions for stage 1.
+[2018-07-21T23:10:04.452Z] INFO  [5003]  : Running 1 of 2 actions: AppDeployEnactHook...
+[2018-07-21T23:10:13.234Z] INFO  [5003]  : Running 2 of 2 actions: AppDeployPostHook...
+[2018-07-21T23:10:13.234Z] INFO  [5003]  : Running AddonsAfter for command CMD-AppDeploy...
+[2018-07-21T23:10:13.309Z] INFO  [5003]  : Command CMD-AppDeploy succeeded!
+[2018-07-21T23:10:13.309Z] INFO  [5003]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"Your WSGIPath refers to a file that does not exist.","severity":"ERROR","timestamp":1532214604}]}]}
+[2018-07-21T23:11:07.328Z] DEBUG [5380]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-07-21T23:11:07.328Z] DEBUG [5380]  : Checking if the command processor should execute...
+[2018-07-21T23:11:07.330Z] DEBUG [5380]  : Checking whether the command is applicable to instance (i-0779bcf48c61843ad)..
+[2018-07-21T23:11:07.330Z] INFO  [5380]  : Command is applicable to this instance (i-0779bcf48c61843ad)..
+[2018-07-21T23:11:07.330Z] DEBUG [5380]  : Checking if the received command stage is valid..
+[2018-07-21T23:11:07.330Z] INFO  [5380]  : No stage_num in command. Valid stage..
+[2018-07-21T23:11:07.330Z] INFO  [5380]  : Received command CMD-TailLogs: {"execution_data"=>"*", "instance_ids"=>["i-0779bcf48c61843ad"], "data"=>"ecc5f7ad-ffa5-4921-97a0-252fc87fa1f2", "command_name"=>"CMD-TailLogs", "api_version"=>"1.0", "resource_name"=>"AWSEBAutoScalingGroup", "request_id"=>"ecc5f7ad-ffa5-4921-97a0-252fc87fa1f2"}
+[2018-07-21T23:11:07.331Z] INFO  [5380]  : Command processor should execute command.
+[2018-07-21T23:11:07.331Z] DEBUG [5380]  : Storing current stage..
+[2018-07-21T23:11:07.331Z] DEBUG [5380]  : Stage_num does not exist. Not saving null stage. Returning..
+[2018-07-21T23:11:07.331Z] DEBUG [5380]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-07-21T23:11:07.331Z] DEBUG [5380]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2018-07-21T23:11:07.331Z] DEBUG [5380]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-07-21T23:11:07.332Z] INFO  [5380]  : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-07-21T23:11:07.333Z] INFO  [5380]  : Updating Command definition of addon logstreaming.
+[2018-07-21T23:11:07.333Z] INFO  [5380]  : Updating Command definition of addon logpublish.
+[2018-07-21T23:11:07.333Z] DEBUG [5380]  : Loaded definition of Command CMD-TailLogs.
+[2018-07-21T23:11:07.333Z] INFO  [5380]  : Executing CMD-TailLogs
+[2018-07-21T23:11:07.333Z] INFO  [5380]  : Executing command: CMD-TailLogs...
+[2018-07-21T23:11:07.334Z] INFO  [5380]  : Executing command CMD-TailLogs activities...
+[2018-07-21T23:11:07.334Z] DEBUG [5380]  : Setting environment variables..
+[2018-07-21T23:11:07.334Z] INFO  [5380]  : Running AddonsBefore for command CMD-TailLogs...
+[2018-07-21T23:11:07.334Z] DEBUG [5380]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2018-07-21T23:11:07.334Z] INFO  [5380]  : Running stage 0 of command CMD-TailLogs...
+[2018-07-21T23:11:07.334Z] DEBUG [5380]  : Loaded 1 actions for stage 0.
+[2018-07-21T23:11:07.334Z] INFO  [5380]  : Running 1 of 1 actions: TailLogs...
+
+
+

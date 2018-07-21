@@ -1,0 +1,23 @@
+branch-defaults:
+  master:
+    environment: stable-mvp
+    group_suffix: null
+environment-defaults:
+  stable-mvp:
+    branch: null
+    repository: null
+global:
+  application_name: stable-mvp
+  branch: null
+  default_ec2_keyname: null
+  default_platform: arn:aws:elasticbeanstalk:us-east-1::platform/Python 3.6 running
+    on 64bit Amazon Linux/2.7.1
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application
