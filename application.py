@@ -1,4 +1,4 @@
-from flask import send_file, Flask, request, session, g, redirect, url_for, abort, render_template, flash
+from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
 from flask_sqlalchemy import SQLAlchemy
 import os, csv, psycopg2
 from sqlalchemy import create_engine, MetaData, Table
@@ -20,7 +20,6 @@ if ('RDS_HOSTNAME' in os.environ):
         PASSWORD = os.environ['RDS_PASSWORD'],
         HOST = os.environ['RDS_HOSTNAME'],
         PORT = os.environ['RDS_PORT'],
-        SCHEMA = os.environ['RDS_SCHEMA'],
     ))
 else:
     #This means we are in local development
@@ -36,23 +35,13 @@ else:
         PASSWORD = dbDict['PASSWORD'],
         HOST = dbDict['HOST'],
         PORT = dbDict['PORT'],
-        SCHEMA = dbDict['SCHEMA'],
     ))
 
 
 dbString = 'postgresql://' + app.config['USER'] + ':' + app.config['PASSWORD'] + '@' + app.config['HOST'] + ':' + app.config['PORT'] + '/' + app.config['NAME']
 
-# engine = create_engine(dbString)
-#drivers = []
-#drivers.to_sql('tlc_drivers', con=engine, schema='mvp', chunksize=10000, if_exists='replace')
 app.config['SQLALCHEMY_DATABASE_URI'] = dbString
 db = SQLAlchemy(app)
-
-print("Printing Database Info:")
-for table in db.Model.metadata.tables.keys():
-    print (table)
-print(db.Model.metadata.tables.keys())
-print("\n\n")
 
 #Import all views
 from views import *
