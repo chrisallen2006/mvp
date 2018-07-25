@@ -6,6 +6,10 @@ from sqlalchemy.sql import text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, backref, scoped_session, sessionmaker, Query, mapper
 
+#Contansts
+global TRYNUM, CURRUSER
+TRYNUM = 0
+CURRUSER = None
 
 application = app = Flask(__name__)
 
