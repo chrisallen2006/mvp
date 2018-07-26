@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  <center>
+    <h2>Great! We just need your email address</h2>
+    <form style="width:50%" action="{{ url_for('createQuote') }}" method=post enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <h2>And to verify your date of birth</h2>
+      <div class="form-group">
+        <label for="title">Date of Birth:</label>
+        <input type="date" class="form-control" id="dob" name="dob" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Next</button>
+    </form>
+  </center>
+{% endblock %}

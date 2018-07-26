@@ -1,5 +1,5 @@
-from application import *
-from sqlalchemy import BigInteger, Boolean, Column, DateTime, Float, String, Table, Text
+from sqlalchemy import BigInteger, Boolean, Column
+from sqlalchemy import DateTime, Float, String, Text
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()

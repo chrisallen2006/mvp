@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  <center>
+    <h2>VIN Number Lookup</h2>
+    <form style="width:50%" action="{{ url_for('checkVin') }}" method=post enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Enter VIN Number:</label>
+        <input type="number" class="form-control" id="number" name="number" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </center>
+
+  {% if tryNum > 1 %}
+    {% include 'contact_form.html' %}
+  {% endif %}
+
+{% endblock %}

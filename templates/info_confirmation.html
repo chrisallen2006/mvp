@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+  <center>
+    <h2>Thank you for providing your information.</h2>
+    <h2>We will reach out shortly to further assist you.</h2>
+    <button type="button" onclick="location.href='{{ url_for('landing') }}'" class="btn btn-primary">Go Back Home</button>
+  </center>
+{% endblock %}

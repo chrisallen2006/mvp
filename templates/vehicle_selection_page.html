@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+  <center>
+    <h2>Hi {{ name }}, we also found a</h2>
+    <h2>{{ vehicleName }}</h2>
+    <h2>VIN # ending in - {{ vin }}</h2>
+    <h2>with Plate # {{ plate }}</h2>
+    <h2>Is that the car you want to insure?</h2>
+    <button type="button" onclick="location.href='{{ url_for('routeToEmailDob') }}'" class="btn btn-primary">Yes</button>
+    <button type="button" onclick="location.href='{{ url_for('routeToVin') }}'" class="btn btn-primary">No</button>
+  </center>
+{% endblock %}
