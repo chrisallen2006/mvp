@@ -13,7 +13,7 @@ global:
   default_platform: arn:aws:elasticbeanstalk:us-east-1::platform/Python 3.6 running
     on 64bit Amazon Linux/2.7.1
   default_region: us-east-1
-  include_git_submodules: true
+  include_git_submodules: false
   instance_profile: null
   platform_name: null
   platform_version: null
