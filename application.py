@@ -45,9 +45,10 @@ dbString = "postgresql://{0}:{1}@{2}:{3}/{4}".format(
 )
 
 app.config['SQLALCHEMY_DATABASE_URI'] = dbString
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+from views import *
 
 # Finally, launch the application
 if __name__ == "__main__":
-    from views import *
     app.run()
