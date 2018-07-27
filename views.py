@@ -1,7 +1,6 @@
-from flask import render_template, request
 from lib import getNameFromLicNum, getVehicleFromName, getVehicleFromVin
 from lib import getFirstName, getDmvRecord, MetaData
-from application import app
+from application import *
 
 metadata = MetaData()
 

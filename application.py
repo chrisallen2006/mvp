@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import BigInteger, Boolean, Column
+from sqlalchemy import DateTime, Float, String, Text
+from sqlalchemy.ext.declarative import declarative_base
 import os, csv
-import views
 
 app = application = Flask(__name__)
 
@@ -49,7 +51,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 from views import *
-import views
 
 # Finally, launch the application
 if __name__ == "__main__":

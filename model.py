@@ -1,6 +1,4 @@
-from sqlalchemy import BigInteger, Boolean, Column
-from sqlalchemy import DateTime, Float, String, Text
-from sqlalchemy.ext.declarative import declarative_base
+from application import *
 
 Base = declarative_base()
 metadata = Base.metadata
