@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os, csv
 
-application = app = Flask(__name__)
+app = application = Flask(__name__)
 
 app.config.from_object(__name__)
 
@@ -46,8 +46,10 @@ dbString = "postgresql://{0}:{1}@{2}:{3}/{4}".format(
 app.config['SQLALCHEMY_DATABASE_URI'] = dbString
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-from views import *
+
+#from views import *
 
 # Finally, launch the application
 if __name__ == "__main__":
+    from views import *
     app.run()
