@@ -49,6 +49,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 from views import *
+import views
 
 # Finally, launch the application
 if __name__ == "__main__":
