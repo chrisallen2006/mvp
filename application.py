@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import os
-import csv
+import os, csv
 
 application = app = Flask(__name__)
 
