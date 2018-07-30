@@ -1,5 +1,5 @@
 from model import DmvRecords, TlcDriver, TlcVehicles
-from application import db
+from application import *
 
 '''
     This is a Library of all functions used to do data analysis,
@@ -7,6 +7,7 @@ from application import db
 '''
 
 BASE_PREMIUM = 3253
+DEFAULT_VALUE = 18000
 
 # Meta Data class that holds all data needed throughout the app as
 # the user continues the signup process
@@ -69,15 +70,29 @@ def getFirstName(fullName):
 # Method to read dmv_records table and get the record
 
 
-def getDmvRecord(metadata):
+def getDmvRecord(license):
     records = db.session.query(DmvRecords).filter_by(
-        tlc_license_num=metadata.currTlcDriver.license_num).all()
+        tlc_license_num=license).all()
     if (len(records) > 0):
         return records[0]
     else:
         return None
 
-# Logic for creating a quote depending on:
+# Method to calculate number of years since a given year
+
+
+def calcYearsSince(then):
+    now = datetime.datetime.now()
+    yearSince = now.year - then.year
+    if (now.month < then.month):
+        yearSince -= 1
+    elif (now.month == then.month):
+        if (now.dat < then.day):
+            yearSince -=1
+    return yearSince
+
+
+    # Logic for creating a quote depending on:
     # Age
     # Length of tlc
     # Length of drivers Liscense
@@ -89,8 +104,9 @@ def getDmvRecord(metadata):
 
 def getQuote(
     age, length_of_tlc, length_of_dl, points, accidents,
-        vehicle_value, deductible):
+        vehicle_value=DEFAULT_VALUE, deductible=500):
 
+    print("age: ", age, "length of tlc: ", length_of_tlc, "length of dl: ", length_of_dl, "points: ", points, "accidents: ", accidents, "value: ", vehicle_value, "deductible", deductible)
     liability_premium = BASE_PREMIUM
     physical_premium = 0
 
@@ -111,7 +127,7 @@ def getQuote(
         liability_premium += ((6 * 50) + ((points - 6) * 200))
 
     if accidents:
-        liability_premium *= 600
+        liability_premium += 600
 
     if deductible == 500:
         if liability_premium < 3500:
@@ -132,4 +148,4 @@ def getQuote(
         elif liability_premium < 7500:
             physical_premium = vehicle_value * .13
 
-    return (liability_premium, physical_premium)
+    return (liability_premium/12, physical_premium/12)

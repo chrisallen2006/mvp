@@ -1,5 +1,4 @@
-from lib import getNameFromLicNum, getVehicleFromName, getVehicleFromVin
-from lib import getFirstName, getDmvRecord, MetaData
+from lib import *
 from application import *
 
 metadata = MetaData()
@@ -134,18 +133,21 @@ def checkVin():
 
 @app.route('/createQuote', methods=['POST'])
 def createQuote():
-    # age, length_of_tlc, length_of_dl, points, accidents,
-    #               vehicle_value, deductible
     # First we need to get the DMV records
     # TODO: for mvp we assume this is always correct
-    metadata.currDmvRecord = getDmvRecord(metadata)
-    #  (lPrem, pPrem) = getQuote(
-    #      calcYearsSince(metadata.currDmvRecord.dob),
-    #      calcYearsSince(metadata.currDmvRecord.tlc_license_issue_date),
-    #      calcYearsSince(metadata.currDmvRecord.dmv_license_issue_date),
-    #      metadata.currDmvRecord.points,
-    #      metadata.currDmvRecord.accidents,
-    #      # TODO:vehicle value,
-    #      # TODO:deductible
-    #  )
-    return render_template('info_confirmation.html')
+    metadata.currDmvRecord = getDmvRecord(metadata.currTlcDriver.license_num)
+    if (metadata.currDmvRecord is None):
+
+        #TODO: this is really hacky for the MVP, but if we don't find the
+        # actual person, then let's just use the first entry in the dmv
+        # database
+        metadata.currDmvRecord = getDmvRecord("5650207")
+
+    (lPrem, pPrem) = getQuote(
+         calcYearsSince(metadata.currDmvRecord.dob),
+         calcYearsSince(metadata.currDmvRecord.tlc_license_issue_date),
+         calcYearsSince(metadata.currDmvRecord.dmv_license_issue_date),
+         metadata.currDmvRecord.points,
+         metadata.currDmvRecord.accidents
+     )
+    return render_template('info_confirmation.html', lPrem="%.2f" % lPrem, pPrem="%.2f" % pPrem)

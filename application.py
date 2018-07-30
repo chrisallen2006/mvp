@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import BigInteger, Boolean, Column
 from sqlalchemy import DateTime, Float, String, Text
 from sqlalchemy.ext.declarative import declarative_base
-import os, csv
+import os, csv, datetime
 
 app = application = Flask(__name__)
 

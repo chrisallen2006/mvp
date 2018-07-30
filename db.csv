@@ -1,0 +1,6 @@
+NAME postgres
+USER stable_db_admin
+PASSWORD dying_dingus_ricochet_karachi_iowa
+HOST stable-mvp-db.ckny20jgctl0.us-east-1.rds.amazonaws.com
+PORT 5432
+SCHEMA mvp
