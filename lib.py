@@ -67,6 +67,24 @@ def getFirstName(fullName):
         return fullName
     return names[1].lower().capitalize()
 
+# Method to return just the last name of a given string
+
+
+def getLastName(fullName):
+    names = fullName.split(",")
+    if (len(names) < 2):
+        return fullName
+    return names[0].lower().capitalize()
+
+
+# Method to format name and return that as a string
+
+
+def formatName(name):
+    first = getFirstName(name)
+    last = getLastName(name)
+    return ("{0} {1}".format(first, last))
+
 # Method to read dmv_records table and get the record
 
 

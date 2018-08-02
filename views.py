@@ -8,7 +8,9 @@ metadata = MetaData()
 
 @app.route('/')
 def landing():
+    metadata.trynum = 0
     return render_template('tlc_number_page.html', tryNum=metadata.trynum)
+
 
 # Check given TLC number in tlc_drivers table
 # This is called once the user puts a tlc number into the landing page
@@ -25,8 +27,9 @@ def checkTLC():
     # If there is a match, move on to the driver selection page
     if (name is not None):
         metadata.currTlcDriver = name
+        metadata.trynum = 0
         return render_template(
-            'driver_selection_page.html', driverName=name.name)
+            'driver_selection_page.html', driverName=formatName(name.name))
 
     # If there is not a match, then ask them to enter the number again
     # If it is the 3rd or greater time
@@ -52,8 +55,8 @@ def queryVehicle():
     if (vehicle is not None):
         metadata.currTlcVehicle = vehicle
         name = getFirstName(metadata.currTlcDriver.name)
-        vehicleName = vehicle.base_type
-        vin = vehicle.vin[len(vehicle.vin)-4:len(vehicle.vin)]
+        vehicleName = "{0} {1}".format(vehicle.vehicle_year, vehicle.base_type)
+        vin = vehicle.vin[len(vehicle.vin)-6:len(vehicle.vin)]
         plate = vehicle.license_plate
         return render_template(
             'vehicle_selection_page.html',
@@ -115,9 +118,10 @@ def checkVin():
     vehicle = getVehicleFromVin(num)
     if (vehicle is not None):
         metadata.currTlcVehicle = vehicle
-        name = getFirstName(metadata.currTlcDriver.name)
-        vehicleName = vehicle.base_type
-        vin = vehicle.vin[len(vehicle.vin)-4:len(vehicle.vin)]
+        metadata.trynum = 0
+        name = getFirstName(metadata.currTlcVehicle.name)
+        vehicleName = "{0} {1}".format(vehicle.vehicle_year, vehicle.base_type)
+        vin = vehicle.vin[len(vehicle.vin)-6:len(vehicle.vin)]
         plate = vehicle.license_plate
         return render_template(
             'vehicle_selection_page.html',
