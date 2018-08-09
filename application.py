@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import BigInteger, Boolean, Column
 from sqlalchemy import DateTime, Float, String, Text
