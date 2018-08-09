@@ -15,6 +15,31 @@ def landing():
 # Check given TLC number in tlc_drivers table
 # This is called once the user puts a tlc number into the landing page
 
+# A route to return all of the available entries in our catalog.
+@app.route('/api/v1/checkTLC', methods=['POST'])
+def apiCheckTLC():
+# Get the number inputted in the form
+    reqJson = request.get_json('number')
+    print(reqJson)
+
+    # Get the name the TLC number given corresponds to. None if not found.
+    name = getNameFromLicNum(reqJson['number'])
+
+    # If there is a match, move on to the driver selection page
+    if (name is not None):
+        metadata.trynum = 0
+        metadata.currTlcDriver = formatName(name.name)
+    else:
+        metadata.trynum += 1
+        metadata.currTlcDriver = ''
+
+    # Build JSON API response
+    jsonResponse = jsonify({
+        'driver': str(metadata.currTlcDriver),
+        'trynum': metadata.trynum
+    })
+    jsonResponse.headers.add('Access-Control-Allow-Origin', '*')
+    return jsonResponse
 
 @app.route('/checkTLC', methods=['POST'])
 def checkTLC():
