@@ -19,10 +19,11 @@ def landing():
 @app.route('/api/v1/checkTLC', methods=['POST'])
 def apiCheckTLC():
 # Get the number inputted in the form
-    num = request.form.get('number')
+    reqJson = request.get_json('number')
+    print(reqJson)
 
     # Get the name the TLC number given corresponds to. None if not found.
-    name = getNameFromLicNum(num)
+    name = getNameFromLicNum(reqJson['number'])
 
     # If there is a match, move on to the driver selection page
     if (name is not None):
@@ -33,11 +34,12 @@ def apiCheckTLC():
         metadata.currTlcDriver = ''
 
     # Build JSON API response
-    resp = {
+    jsonResponse = jsonify({
         'driver': str(metadata.currTlcDriver),
         'trynum': metadata.trynum
-    }
-    return jsonify(resp)
+    })
+    jsonResponse.headers.add('Access-Control-Allow-Origin', '*')
+    return jsonResponse
 
 @app.route('/checkTLC', methods=['POST'])
 def checkTLC():

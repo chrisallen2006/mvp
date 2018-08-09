@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, Response
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import BigInteger, Boolean, Column
 from sqlalchemy import DateTime, Float, String, Text
@@ -54,4 +54,4 @@ from views import *
 
 # Finally, launch the application
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True, use_reloader=False)
