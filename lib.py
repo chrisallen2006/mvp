@@ -124,7 +124,7 @@ def getQuote(
     age, length_of_tlc, length_of_dl, points, accidents,
         vehicle_value=DEFAULT_VALUE, deductible=500):
 
-    print("age: ", age, "length of tlc: ", length_of_tlc, "length of dl: ", length_of_dl, "points: ", points, "accidents: ", accidents, "value: ", vehicle_value, "deductible", deductible)
+    #print("age: ", age, "length of tlc: ", length_of_tlc, "length of dl: ", length_of_dl, "points: ", points, "accidents: ", accidents, "value: ", vehicle_value, "deductible", deductible)
     liability_premium = BASE_PREMIUM
     physical_premium = 0
 
