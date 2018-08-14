@@ -5,7 +5,7 @@ from sqlalchemy import DateTime, Float, String, Text
 from sqlalchemy.ext.declarative import declarative_base
 import os, csv, datetime
 
-app = application = Flask(__name__)
+app = application = Flask(__name__, static_folder='react_app/build')
 
 app.config.from_object(__name__)
 

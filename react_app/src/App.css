@@ -1,0 +1,415 @@
+html {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 320px;
+    height: 100vh;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#root > div {
+    height: 100%
+}
+
+/**
+ * Home style
+ */
+.HomeApp {
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/**
+ * Progress Bar
+ */
+
+#root.fixedToTop {
+    margin-top: 200px;
+}
+
+#progressBar.fixedToTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    z-index: 99;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DDDDDD;
+    box-shadow: 0 0 20px rgba(112, 112, 112, 0.6);
+}
+
+#progressBar.fixedToTop #elements button {
+    width: 16px;
+    border: none;
+    height: 16px;
+    min-height: 16px;
+    line-height: 0;
+    font-size: 0;
+    box-shadow: none !important;
+}
+
+#progressBar.fixedToTop #elements button > span {
+    display: none;
+}
+
+#progressBar.fixedToTop .separator {
+    margin-top: -15px;
+    opacity: 0.2;
+}
+
+#progressBar .App-header {
+    display: none;
+}
+
+#progressBar.fixedToTop .App-header {
+    display: block;
+    width: 100%;
+    background-position: 50% 50% !important;
+    z-index: 999;
+}
+
+#progressBar.fixedToTop .App-header button {
+    margin: 8px 0;
+    width: 32px;
+    height: 32px;
+}
+
+#progressBar.fixedToTop .App-header img {
+    height: 26px;
+    margin: 0 auto;
+    padding: 11px 32px 11px 0;
+}
+
+/**
+ * Driver style
+ */
+.driverSelector {
+    margin: 0 0 30px 0 !important;
+    display: block;
+}
+
+.driverSelector > div {
+    margin: 0;
+}
+
+.driverSelector > div > label {
+    margin: 8px 0;
+    height: 46px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, rgba(244, 244, 244, 0.6), rgba(255, 255, 255, 0.6));
+    border: solid 1px #C8C4BD;
+}
+
+.driverSelector > div > label.active {
+    background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.6), rgba(216, 216, 216, 0.6));
+    border: solid 1px rgba(112, 112, 112, 0.6);
+}
+
+.driverSelector > div > label > span:first-child {
+    width: 15%;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.driverSelector > div > label > span:last-child {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 85%;
+    margin-left: -15px;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: center;
+    color: #67676a;
+}
+
+/**
+Visible for SM or bigger
+ */
+.classSpecial {
+    width: 30% !important;
+    height: 160px !important;
+    border-radius: 30px !important;
+    float: left !important;
+    position: relative !important;
+}
+
+.classSpecial > span {
+    width: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+    height: 50% !important;
+}
+
+.classSpecial > span:first-child {
+    height: 50% !important;
+    margin-bottom: -45% !important;
+}
+
+.classSpecial > span:last-child {
+    height: 25% !important;
+    margin-top: -25% !important;
+    margin-right: -100% !important;
+    padding: 5px;
+}
+
+.classSpecial.special1 {
+}
+
+.classSpecial.special2 {
+    margin: -170px auto 0 auto !important;
+}
+
+.classSpecial.special3 {
+    margin: -162px 0 0 auto;
+}
+
+/**
+ * Vehicle style
+ */
+.has-error {
+    border: solid 1px rgba(236, 59, 43, 0.6) !important;
+    color: #ec3b2b !important;
+}
+
+/**
+ * Quote style
+ */
+.more {
+    border-radius: 30px !important;
+    background-image: linear-gradient(to top, #f4f4f4, #ffffff) !important;
+    border: solid 1px #827d75 !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: 14px !important;
+    letter-spacing: 0.3px !important;
+    text-align: center !important;
+    color: #00749f !important;
+    text-transform: lowercase !important;
+    padding: 2px 8px !important;
+    height: 14px !important;
+    min-height: 24px !important;
+    margin-top: -4px !important;
+}
+
+.physicalSelector {
+    margin: 20px 0 !important;
+    display: block;
+    background-image: linear-gradient(to top, rgba(244, 244, 244, 0.8), rgba(255, 255, 255, 0.8));
+    border: solid 1px rgba(112, 112, 112, 0.8) !important;
+    border-radius: 24px !important;
+}
+
+.physicalSelector > div {
+    margin: 0;
+    padding: 8px 16px;
+}
+
+.physicalSelector > div > div:last-child > div {
+    width: 100%;
+    display: block;
+}
+
+.physicalSelector > div > div:last-child > div > label {
+    width: 30%;
+    margin: 4px 2% 4px 0;
+    height: 26px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, rgba(244, 244, 244, 0.6), rgba(255, 255, 255, 0.6));
+    border: solid 1px #C8C4BD;
+    float: left;
+}
+
+.physicalSelector > div > div:last-child > div > label > span:first-child {
+    width: 10%;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.physicalSelector > div > div:last-child > div > label > span:first-child > span > svg {
+    width: 15px;
+    margin-left: 8px;
+}
+
+.physicalSelector > div > div:last-child > div > label > span:last-child {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 90%;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: right;
+    color: #5c5a56;
+    margin-right: 10px;
+}
+
+.physicalSelector > div > div:last-child > div > label:last-child {
+    margin-right: 0;
+}
+
+.physicalSelector > div > div:last-child > div > label.active {
+    background-image: linear-gradient(245deg, #3023ae, #0c88c8);
+}
+
+.physicalSelector > div > div:last-child > div > label.active > span:last-child {
+    color: #FFFFFF;
+}
+
+.physicalSelector > div > label > span:first-child {
+    width: 15%;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.physicalSelector > div > label > span:last-child {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 85%;
+    margin-left: -15px;
+    z-index: 2;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: center;
+    color: #67676a;
+}
+
+.pageSelector {
+    margin: 0 !important;
+    display: block;
+    background-image: linear-gradient(to top, rgba(244, 244, 244, 0.8), rgba(255, 255, 255, 0.8));
+    border-radius: 24px !important;
+}
+
+.pageSelector > div {
+    margin: 0;
+}
+
+.pageSelector > div > label {
+    margin: 0;
+    height: 32px;
+    border-radius: 16px;
+    background-image: linear-gradient(107deg, rgba(215, 215, 215, 0.4), rgba(190, 193, 198, 0.4));
+    border: solid 1px #707070;
+}
+
+.pageSelector > div > label.active {
+    background-image: linear-gradient(107deg, rgba(215, 215, 215, 0.4), rgba(190, 193, 198, 0.4));
+    border: solid 1px #707070;
+}
+
+.pageSelector > div > label > span:first-child {
+    width: 10%;
+    z-index: 1;
+    margin: 0 0 0 5px;
+}
+
+.pageSelector > div > label > span:first-child > span > svg {
+    width: 15px;
+    margin-left: 8px;
+}
+
+.pageSelector > div > label > span:last-child {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 90%;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: right;
+    color: #5c5a56;
+    margin-right: 7px;
+}
+
+.progressBar {
+    height: 24px !important;
+    border-radius: 30px !important;
+    background-image: linear-gradient(98deg, #eeb200, #e36c18) !important;
+    box-shadow: 0 2px 4px 0 #cfcdc9;
+    width: 100% !important;
+}
+
+.progressBar > div {
+    height: 14px !important;
+    border-radius: 30px !important;
+    background-image: linear-gradient(to top, rgba(244, 244, 244, 0.75), rgba(255, 255, 255, 0.75)) !important;
+    border: solid 1px #f0cf61;
+    margin: 4px !important;
+    width: 96% !important;
+}
+
+/**
+ * App style
+ */
+.App {
+    text-align: center;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.App-header {
+    position: sticky;
+}
+
+/**
+ * App Footer style
+ */
+.App-footer {
+    text-align: left;
+    margin: 30px 0 0 0;
+    padding-bottom: 16px;
+}
+
+.App-footer .white {
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #f2f2f2;
+}
+
+.App-footer .gray {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #9e9b96;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}

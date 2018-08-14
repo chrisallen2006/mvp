@@ -1,13 +1,25 @@
 from lib import *
 from application import *
+from flask import send_from_directory
 
 metadata = MetaData()
 
 # Landing page is the page to input the driver's tlc number
-@app.route('/')
-def landing():
-    metadata.trynum = 0
-    return render_template('tlc_number_page.html', tryNum=metadata.trynum)
+# @app.route('/')
+# def landing():
+#     metadata.trynum = 0
+#     return render_template('tlc_number_page.html', tryNum=metadata.trynum)
+# Serve React App
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists("react_app/build/" + path):
+        return send_from_directory('react_app/build', path)
+    elif 'api' in path:
+        pass
+    else:
+        return send_from_directory('react_app/build', 'index.html')
+
 
 
 # API route to return Driver details by TLC number.
