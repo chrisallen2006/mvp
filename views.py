@@ -10,6 +10,7 @@ metadata = MetaData()
 #     metadata.trynum = 0
 #     return render_template('tlc_number_page.html', tryNum=metadata.trynum)
 # Serve React App
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
@@ -45,7 +46,7 @@ def apiCheckTLC():
     jsonResponse = jsonify({
         'driver': str(currTlcDriver),
         'trynum': trynum,
-        'driverName': driverName 
+        'driverName': driverName
     })
     jsonResponse.headers.add('Access-Control-Allow-Origin', '*')
     return jsonResponse
@@ -76,7 +77,7 @@ def checkTLC():
     return render_template('tlc_number_page.html', tryNum=metadata.trynum)
 
 
-# API route to get Vehicle info from Driver page 
+# API route to get Vehicle info from Driver page
 @app.route('/api/v1/queryVehicle', methods=['POST'])
 def apiQueryVehicle():
     #Get Driver Name from POST params
@@ -245,7 +246,7 @@ def checkVin():
 def apiCreateQuote():
     # Get POST params: TLC license no, DOB
     tlc = request.get_json('tlc')['tlc']
-    
+
     # First we need to get the DMV records
     # TODO: for mvp we assume this is always correct
     metadata.currDmvRecord = getDmvRecord(tlc)

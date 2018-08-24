@@ -1,0 +1,480 @@
+Retrieving logs...
+============= i-0f3f4220b681d7fa9 ==============
+-------------------------------------
+/opt/python/log/supervisord.log
+-------------------------------------
+2018-07-27 18:21:40,523 CRIT Supervisor running as root (no user in config file)
+2018-07-27 18:21:40,538 INFO RPC interface 'supervisor' initialized
+2018-07-27 18:21:40,538 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-07-27 18:21:40,539 INFO supervisord started with pid 3025
+2018-07-27 18:21:41,541 INFO spawned: 'httpd' with pid 3111
+2018-07-27 18:21:42,686 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-27 18:22:33,650 INFO stopped: httpd (exit status 0)
+2018-07-27 18:22:34,655 INFO spawned: 'httpd' with pid 3429
+2018-07-27 18:22:35,719 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-27 18:24:30,916 INFO stopped: httpd (exit status 0)
+2018-07-27 18:24:31,921 INFO spawned: 'httpd' with pid 3767
+2018-07-27 18:24:32,983 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-27 18:36:18,105 INFO stopped: httpd (exit status 0)
+2018-07-27 18:36:19,110 INFO spawned: 'httpd' with pid 4572
+2018-07-27 18:36:20,164 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-27 18:50:01,133 INFO stopped: httpd (exit status 0)
+2018-07-27 18:50:02,139 INFO spawned: 'httpd' with pid 5302
+2018-07-27 18:50:03,197 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-27 19:02:29,844 INFO stopped: httpd (exit status 0)
+2018-07-27 19:02:30,849 INFO spawned: 'httpd' with pid 6137
+2018-07-27 19:02:31,886 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-07-27 20:01:57,050 INFO stopped: httpd (exit status 0)
+2018-07-27 20:01:58,055 INFO spawned: 'httpd' with pid 30829
+2018-07-27 20:01:59,097 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-02 16:17:12,547 INFO stopped: httpd (exit status 0)
+2018-08-02 16:17:13,552 INFO spawned: 'httpd' with pid 8422
+2018-08-02 16:17:14,603 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-07 16:00:34,634 INFO stopped: httpd (exit status 0)
+2018-08-07 16:00:35,639 INFO spawned: 'httpd' with pid 10222
+2018-08-07 16:00:36,706 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-07 16:13:54,707 INFO stopped: httpd (exit status 0)
+2018-08-07 16:13:55,713 INFO spawned: 'httpd' with pid 11041
+2018-08-07 16:13:56,766 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-09 15:10:01,213 INFO stopped: httpd (exit status 0)
+2018-08-09 15:10:02,218 INFO spawned: 'httpd' with pid 5126
+2018-08-09 15:10:03,266 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-09 15:14:55,144 INFO stopped: httpd (exit status 0)
+2018-08-09 15:14:56,149 INFO spawned: 'httpd' with pid 5647
+2018-08-09 15:14:57,197 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-13 20:39:53,216 INFO stopped: httpd (exit status 0)
+2018-08-13 20:39:54,221 INFO spawned: 'httpd' with pid 5074
+2018-08-13 20:39:55,275 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-22 22:58:39,298 INFO stopped: httpd (exit status 0)
+2018-08-22 22:58:40,303 INFO spawned: 'httpd' with pid 1038
+2018-08-22 22:58:41,353 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-24 01:56:06,707 INFO stopped: httpd (exit status 0)
+2018-08-24 01:56:07,712 INFO spawned: 'httpd' with pid 20160
+2018-08-24 01:56:08,757 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+
+
+-------------------------------------
+/var/log/httpd/error_log
+-------------------------------------
+[Thu Aug 09 15:14:55.084949 2018] [mpm_prefork:notice] [pid 5126] AH00169: caught SIGTERM, shutting down
+[Thu Aug 09 15:14:56.197506 2018] [suexec:notice] [pid 5647] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Aug 09 15:14:56.213543 2018] [so:warn] [pid 5647] AH01574: module wsgi_module is already loaded, skipping
+[Thu Aug 09 15:14:56.215910 2018] [http2:warn] [pid 5647] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Thu Aug 09 15:14:56.215920 2018] [http2:warn] [pid 5647] AH02951: mod_ssl does not seem to be enabled
+[Thu Aug 09 15:14:56.216462 2018] [lbmethod_heartbeat:notice] [pid 5647] AH02282: No slotmem from mod_heartmonitor
+[Thu Aug 09 15:14:56.216527 2018] [:warn] [pid 5647] mod_wsgi: Compiled for Python/3.6.2.
+[Thu Aug 09 15:14:56.216530 2018] [:warn] [pid 5647] mod_wsgi: Runtime using Python/3.6.5.
+[Thu Aug 09 15:14:56.218993 2018] [mpm_prefork:notice] [pid 5647] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Thu Aug 09 15:14:56.219012 2018] [core:notice] [pid 5647] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Aug 09 15:16:55.861875 2018] [:error] [pid 5652] /opt/python/run/venv/local/lib64/python3.6/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[Thu Aug 09 15:16:55.861922 2018] [:error] [pid 5652]   """)
+[Thu Aug 09 15:20:37.915687 2018] [:error] [pid 5652] {'number': '689626'}
+[Thu Aug 09 15:21:08.164198 2018] [:error] [pid 5652] {'number': '689626'}
+[Thu Aug 09 15:36:39.483301 2018] [:error] [pid 5652] {'number': '689626'}
+[Thu Aug 09 15:38:02.260192 2018] [:error] [pid 5652] {'number': '681774'}
+[Thu Aug 09 15:38:42.804927 2018] [:error] [pid 5652] {'number': ''}
+[Thu Aug 09 15:38:49.055144 2018] [:error] [pid 5652] {'number': 'wr'}
+[Thu Aug 09 15:40:23.529528 2018] [:error] [pid 5652] {'number': '698739'}
+[Thu Aug 09 15:48:36.064831 2018] [:error] [pid 5652] {'number': '698739'}
+[Thu Aug 09 15:58:28.796171 2018] [:error] [pid 5652] {'number': ''}
+[Thu Aug 09 15:58:31.155480 2018] [:error] [pid 5652] {'number': 'sefesf'}
+[Thu Aug 09 16:04:19.418061 2018] [:error] [pid 5652] {'number': '493092'}
+[Thu Aug 09 16:05:24.329351 2018] [:error] [pid 5652] {'number': '681774'}
+[Fri Aug 10 12:42:16.933973 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Fri Aug 10 12:51:40.361267 2018] [:error] [pid 5652] {'number': ''}
+[Fri Aug 10 12:54:29.016445 2018] [:error] [pid 5652] {'number': ''}
+[Fri Aug 10 12:54:30.570241 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Fri Aug 10 12:58:19.427324 2018] [:error] [pid 5652] {'number': 'ceas'}
+[Fri Aug 10 12:58:24.227216 2018] [:error] [pid 5652] {'number': 'AAA'}
+[Fri Aug 10 12:58:36.034022 2018] [:error] [pid 5652] {'number': ''}
+[Fri Aug 10 12:58:37.425339 2018] [:error] [pid 5652] {'number': ''}
+[Fri Aug 10 12:58:39.617427 2018] [:error] [pid 5652] {'number': 'AAA'}
+[Fri Aug 10 15:05:42.901559 2018] [:error] [pid 5652] {'number': 'drr'}
+[Fri Aug 10 15:05:52.946563 2018] [:error] [pid 5652] {'number': '123'}
+[Fri Aug 10 15:08:32.021412 2018] [:error] [pid 5652] {'number': '4455'}
+[Sat Aug 11 09:18:10.636696 2018] [:error] [pid 5652] {'number': '689626'}
+[Sat Aug 11 09:18:50.863324 2018] [:error] [pid 5652] {'number': '689626'}
+[Sat Aug 11 13:09:01.907650 2018] [cgi:error] [pid 9390] [client 172.31.46.105:18670] AH02811: script not found or unable to stat: /var/www/cgi-bin/php
+[Sat Aug 11 16:46:53.395972 2018] [:error] [pid 5652] {'number': '493092'}
+[Mon Aug 13 06:35:27.141555 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Mon Aug 13 06:36:11.268660 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Mon Aug 13 10:56:03.984774 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Mon Aug 13 11:04:43.831540 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Mon Aug 13 13:48:30.812374 2018] [:error] [pid 5652] {'number': ''}
+[Mon Aug 13 13:51:54.108910 2018] [:error] [pid 5652] {'number': 'ceva'}
+[Mon Aug 13 15:30:22.316624 2018] [:error] [pid 5652] {'number': '498190'}
+[Mon Aug 13 15:54:10.091329 2018] [:error] [pid 5652] {'number': 'qwer'}
+[Mon Aug 13 15:54:14.212721 2018] [:error] [pid 5652] {'number': '123'}
+[Mon Aug 13 15:54:19.192871 2018] [:error] [pid 5652] {'number': ''}
+[Mon Aug 13 20:39:53.156662 2018] [mpm_prefork:notice] [pid 5647] AH00169: caught SIGTERM, shutting down
+[Mon Aug 13 20:39:54.275951 2018] [suexec:notice] [pid 5074] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Mon Aug 13 20:39:54.291716 2018] [so:warn] [pid 5074] AH01574: module wsgi_module is already loaded, skipping
+[Mon Aug 13 20:39:54.293921 2018] [http2:warn] [pid 5074] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Mon Aug 13 20:39:54.293935 2018] [http2:warn] [pid 5074] AH02951: mod_ssl does not seem to be enabled
+[Mon Aug 13 20:39:54.294476 2018] [lbmethod_heartbeat:notice] [pid 5074] AH02282: No slotmem from mod_heartmonitor
+[Mon Aug 13 20:39:54.294547 2018] [:warn] [pid 5074] mod_wsgi: Compiled for Python/3.6.2.
+[Mon Aug 13 20:39:54.294552 2018] [:warn] [pid 5074] mod_wsgi: Runtime using Python/3.6.5.
+[Mon Aug 13 20:39:54.296939 2018] [mpm_prefork:notice] [pid 5074] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Mon Aug 13 20:39:54.296960 2018] [core:notice] [pid 5074] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Aug 13 20:45:19.042993 2018] [:error] [pid 5079] /opt/python/run/venv/local/lib64/python3.6/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[Mon Aug 13 20:45:19.043026 2018] [:error] [pid 5079]   """)
+[Mon Aug 13 20:45:21.689031 2018] [:error] [pid 5079] AVILA,JULIAN
+[Mon Aug 13 21:54:00.602066 2018] [:error] [pid 5079] MAIGA,BOUNAFOU
+[Mon Aug 13 21:54:00.623027 2018] [:error] [pid 5079] 2016 Toyota Camry
+[Mon Aug 13 21:54:07.517369 2018] [:error] [pid 5079]    
+[Mon Aug 13 21:54:33.827197 2018] [:error] [pid 5079] GNANARAJ,SINNA
+[Mon Aug 13 21:55:04.474645 2018] [:error] [pid 5079]    
+[Tue Aug 14 08:43:34.193535 2018] [:error] [pid 5079] GNANARAJ,SINNA
+[Tue Aug 14 08:44:04.978359 2018] [:error] [pid 5079] rwer 12 2 1988
+[Tue Aug 14 10:24:51.873361 2018] [cgi:error] [pid 7808] [client 172.31.41.76:26476] AH02811: script not found or unable to stat: /var/www/cgi-bin/luci
+[Wed Aug 15 04:51:06.097043 2018] [cgi:error] [pid 25135] [client 172.31.88.186:44586] AH02811: script not found or unable to stat: /var/www/cgi-bin/user
+[Fri Aug 17 08:07:05.040317 2018] [cgi:error] [pid 29926] [client 172.31.41.76:43604] AH02811: script not found or unable to stat: /var/www/cgi-bin/luci
+[Wed Aug 22 22:58:39.238868 2018] [mpm_prefork:notice] [pid 5074] AH00169: caught SIGTERM, shutting down
+[Wed Aug 22 22:58:40.353455 2018] [suexec:notice] [pid 1038] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Wed Aug 22 22:58:40.368709 2018] [so:warn] [pid 1038] AH01574: module wsgi_module is already loaded, skipping
+[Wed Aug 22 22:58:40.371088 2018] [http2:warn] [pid 1038] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Wed Aug 22 22:58:40.371098 2018] [http2:warn] [pid 1038] AH02951: mod_ssl does not seem to be enabled
+[Wed Aug 22 22:58:40.371618 2018] [lbmethod_heartbeat:notice] [pid 1038] AH02282: No slotmem from mod_heartmonitor
+[Wed Aug 22 22:58:40.371673 2018] [:warn] [pid 1038] mod_wsgi: Compiled for Python/3.6.2.
+[Wed Aug 22 22:58:40.371676 2018] [:warn] [pid 1038] mod_wsgi: Runtime using Python/3.6.5.
+[Wed Aug 22 22:58:40.374061 2018] [mpm_prefork:notice] [pid 1038] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Wed Aug 22 22:58:40.374084 2018] [core:notice] [pid 1038] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Aug 24 01:55:14.852926 2018] [:error] [pid 1043] /opt/python/run/venv/local/lib64/python3.6/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[Fri Aug 24 01:55:14.852968 2018] [:error] [pid 1043]   """)
+[Fri Aug 24 01:56:06.647878 2018] [mpm_prefork:notice] [pid 1038] AH00169: caught SIGTERM, shutting down
+[Fri Aug 24 01:56:07.757268 2018] [suexec:notice] [pid 20160] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Fri Aug 24 01:56:07.773159 2018] [so:warn] [pid 20160] AH01574: module wsgi_module is already loaded, skipping
+[Fri Aug 24 01:56:07.775942 2018] [http2:warn] [pid 20160] AH10034: The mpm module (prefork.c) is not supported by mod_http2. The mpm determines how things are processed in your server. HTTP/2 has more demands in this regard and the currently selected mpm will just not do. This is an advisory warning. Your server will continue to work, but the HTTP/2 protocol will be inactive.
+[Fri Aug 24 01:56:07.775955 2018] [http2:warn] [pid 20160] AH02951: mod_ssl does not seem to be enabled
+[Fri Aug 24 01:56:07.776557 2018] [lbmethod_heartbeat:notice] [pid 20160] AH02282: No slotmem from mod_heartmonitor
+[Fri Aug 24 01:56:07.776619 2018] [:warn] [pid 20160] mod_wsgi: Compiled for Python/3.6.2.
+[Fri Aug 24 01:56:07.776622 2018] [:warn] [pid 20160] mod_wsgi: Runtime using Python/3.6.5.
+[Fri Aug 24 01:56:07.779047 2018] [mpm_prefork:notice] [pid 20160] AH00163: Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 configured -- resuming normal operations
+[Fri Aug 24 01:56:07.779065 2018] [core:notice] [pid 20160] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Fri Aug 24 01:58:32.994466 2018] [:error] [pid 20165] /opt/python/run/venv/local/lib64/python3.6/site-packages/psycopg2/__init__.py:144: UserWarning: The psycopg2 wheel package will be renamed from release 2.8; in order to keep installing from binary please use "pip install psycopg2-binary" instead. For details see: <http://initd.org/psycopg/docs/install.html#binary-install-from-pypi>.
+[Fri Aug 24 01:58:32.994497 2018] [:error] [pid 20165]   """)
+[Fri Aug 24 01:59:13.724231 2018] [:error] [pid 20165] MAIGA,BOUNAFOU
+[Fri Aug 24 01:59:13.750271 2018] [:error] [pid 20165] 2016 Toyota Camry
+[Fri Aug 24 01:59:21.925695 2018] [:error] [pid 20165]    
+
+
+
+-------------------------------------
+/var/log/httpd/access_log
+-------------------------------------
+172.31.41.76 (188.26.10.72) - - [23/Aug/2018:11:14:06 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+::1 (-) - - [23/Aug/2018:11:14:56 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:11:14:57 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:11:14:58 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:11:15:02 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:11:15:06 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:11:15:11 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+172.31.88.186 (85.99.110.32) - - [23/Aug/2018:11:15:41 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (116.197.224.228) - - [23/Aug/2018:11:16:51 +0000] "GET / HTTP/1.1" 404 233 "-" "-"
+172.31.88.186 (189.126.76.32) - - [23/Aug/2018:11:21:21 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (85.204.147.172) - - [23/Aug/2018:11:27:01 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+172.31.88.186 (173.249.28.139) - - [23/Aug/2018:11:51:15 +0000] "GET / HTTP/1.1" 404 233 "-" "masscan/1.0 (https://github.com/robertdavidgraham/masscan)"
+172.31.88.186 (157.119.226.197) - - [23/Aug/2018:11:58:46 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+172.31.88.186 (71.6.202.198) - - [23/Aug/2018:13:11:35 +0000] "GET /ccvv HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)"
+172.31.41.76 (71.6.202.198) - - [23/Aug/2018:13:23:18 +0000] "GET /ccvv HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)"
+172.31.88.186 (103.206.227.66) - - [23/Aug/2018:13:55:15 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (131.196.57.95) - - [23/Aug/2018:14:06:24 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (201.0.30.59) - - [23/Aug/2018:14:06:29 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+::1 (-) - - [23/Aug/2018:14:07:30 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:14:07:35 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [23/Aug/2018:14:07:36 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+172.31.41.76 (196.32.106.65) - - [23/Aug/2018:15:10:06 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.88.186 (5.40.85.9) - - [23/Aug/2018:15:14:50 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.88.186 (189.110.179.86) - - [23/Aug/2018:15:17:07 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (180.177.241.97) - - [23/Aug/2018:16:04:51 +0000] "GET / HTTP/1.1" 404 233 "-" "-"
+172.31.88.186 (202.4.122.114) - - [23/Aug/2018:16:21:52 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.88.186 (5.154.55.230) - - [23/Aug/2018:17:44:44 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+172.31.88.186 (193.192.115.91) - - [23/Aug/2018:17:51:21 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (187.74.155.4) - - [23/Aug/2018:18:23:28 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.88.186 (79.61.177.116) - - [23/Aug/2018:18:44:19 +0000] "GET /manager/html HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
+172.31.88.186 (46.37.21.50) - - [23/Aug/2018:18:55:17 +0000] "GET /manager/html HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
+172.31.88.186 (121.101.186.78) - - [23/Aug/2018:19:06:52 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.88.186 (128.201.206.207) - - [23/Aug/2018:20:00:42 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.41.76 (107.181.160.128) - - [23/Aug/2018:20:41:47 +0000] "GET /.git/config HTTP/1.1" 404 233 "-" "Go-http-client/1.1"
+172.31.88.186 (60.191.38.77) - - [23/Aug/2018:21:20:05 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0"
+172.31.88.186 (123.63.118.150) - - [23/Aug/2018:21:32:23 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.41.76 (179.125.43.147) - - [23/Aug/2018:21:57:32 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+172.31.41.76 (187.74.216.5) - - [23/Aug/2018:22:37:31 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.41.76 (187.190.64.180) - - [23/Aug/2018:22:40:49 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (201.57.137.66) - - [23/Aug/2018:23:10:39 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
+172.31.88.186 (187.75.11.245) - - [23/Aug/2018:23:12:20 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+172.31.88.186 (209.17.96.202) - - [24/Aug/2018:00:13:18 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)"
+172.31.41.76 (79.61.177.116) - - [24/Aug/2018:01:03:16 +0000] "GET /manager/html HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
+172.31.88.186 (187.102.50.193) - - [24/Aug/2018:01:05:24 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.88.186 (46.254.131.34) - - [24/Aug/2018:01:05:30 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7"
+::1 (-) - - [24/Aug/2018:01:06:30 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:06:31 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:06:35 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:06:36 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+172.31.88.186 (51.38.12.21) - - [24/Aug/2018:01:28:38 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+172.31.41.76 (177.136.222.232) - - [24/Aug/2018:01:47:06 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
+172.31.41.76 (209.17.96.162) - - [24/Aug/2018:01:51:49 +0000] "GET / HTTP/1.1" 404 233 "-" "Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:55:14 +0000] "POST /api/v1/checkTLC HTTP/1.1" 200 41 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:55:29 +0000] "POST /api/v1/checkTLC HTTP/1.1" 200 41 "http://127.0.0.1:5000/driver" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+127.0.0.1 (-) - - [24/Aug/2018:01:56:10 +0000] "GET / HTTP/1.1" 200 675 "-" "Python-urllib/2.7"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:56:58 +0000] "GET / HTTP/1.1" 200 675 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:56:59 +0000] "GET /static/css/main.d41d8cd9.css HTTP/1.1" 404 226 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:56:59 +0000] "GET /static/js/main.7f71dff5.js HTTP/1.1" 404 224 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:56:59 +0000] "GET /favicon.ico HTTP/1.1" 200 18686 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:02 +0000] "GET / HTTP/1.1" 200 675 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:02 +0000] "GET /static/css/main.d41d8cd9.css HTTP/1.1" 404 226 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:02 +0000] "GET /static/js/main.7f71dff5.js HTTP/1.1" 404 224 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:02 +0000] "GET /favicon.ico HTTP/1.1" 200 18686 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:03 +0000] "GET / HTTP/1.1" 200 675 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:03 +0000] "GET /static/css/main.d41d8cd9.css HTTP/1.1" 404 226 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:03 +0000] "GET /static/js/main.7f71dff5.js HTTP/1.1" 404 224 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:57:03 +0000] "GET /favicon.ico HTTP/1.1" 200 18686 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+::1 (-) - - [24/Aug/2018:01:57:58 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:57:59 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:00 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:01 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:02 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:03 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:04 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:05 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:06 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:07 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:08 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:09 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:10 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+::1 (-) - - [24/Aug/2018:01:58:11 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.33 (Amazon) mod_wsgi/3.5 Python/3.6.5 (internal dummy connection)"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:58:32 +0000] "POST /api/v1/checkTLC HTTP/1.1" 200 69 "http://127.0.0.1:5000/driver" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:58:35 +0000] "POST /api/v1/checkTLC HTTP/1.1" 200 69 "http://127.0.0.1:5000/driver" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:58:59 +0000] "POST /api/v1/checkTLC HTTP/1.1" 200 69 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:59:11 +0000] "POST /api/v1/checkTLC HTTP/1.1" 200 69 "http://127.0.0.1:5000/driver" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:59:13 +0000] "POST /api/v1/queryVehicle HTTP/1.1" 200 103 "http://127.0.0.1:5000/driver" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:59:21 +0000] "POST /api/v1/saveEmailDob HTTP/1.1" 200 16 "http://127.0.0.1:5000/vehicle" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.41.76 (136.56.27.112) - - [24/Aug/2018:01:59:22 +0000] "POST /api/v1/createQuote HTTP/1.1" 200 43 "http://127.0.0.1:5000/quote" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:35 +0000] "GET / HTTP/1.1" 200 675 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:35 +0000] "GET /static/css/main.d41d8cd9.css HTTP/1.1" 404 226 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:35 +0000] "GET /static/js/main.7f71dff5.js HTTP/1.1" 404 224 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:36 +0000] "GET /favicon.ico HTTP/1.1" 200 18686 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:36 +0000] "GET / HTTP/1.1" 200 675 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:36 +0000] "GET /static/css/main.d41d8cd9.css HTTP/1.1" 404 226 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:36 +0000] "GET /static/js/main.7f71dff5.js HTTP/1.1" 404 224 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:36 +0000] "GET /favicon.ico HTTP/1.1" 200 18686 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:37 +0000] "GET / HTTP/1.1" 200 675 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:37 +0000] "GET /static/css/main.d41d8cd9.css HTTP/1.1" 404 226 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:37 +0000] "GET /static/js/main.7f71dff5.js HTTP/1.1" 404 224 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+172.31.88.186 (136.56.27.112) - - [24/Aug/2018:01:59:37 +0000] "GET /favicon.ico HTTP/1.1" 200 18686 "http://stable-mvp.us-east-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+[2018-08-24T01:56:03.416Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/AppDeployPreHook/03deploy.py] : Starting activity...
+[2018-08-24T01:56:04.330Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/AppDeployPreHook/03deploy.py] : Completed activity. Result:
+  Requirement already satisfied: awsebcli==3.14.3 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: botocore==1.10.62 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 2))
+  Requirement already satisfied: cement==2.8.2 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 3))
+  Requirement already satisfied: click==6.7 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 4))
+  Requirement already satisfied: colorama==0.3.9 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 5))
+  Requirement already satisfied: docutils==0.14 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 6))
+  Requirement already satisfied: flake8==3.5.0 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 7))
+  Requirement already satisfied: Flask==1.0.2 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 8))
+  Requirement already satisfied: Flask-SQLAlchemy==2.3.2 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 9))
+  Requirement already satisfied: itsdangerous==0.24 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 10))
+  Requirement already satisfied: Jinja2==2.10 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 11))
+  Requirement already satisfied: jmespath==0.9.3 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 12))
+  Requirement already satisfied: MarkupSafe==1.0 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 13))
+  Requirement already satisfied: mccabe==0.6.1 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 14))
+  Requirement already satisfied: pathspec==0.5.5 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 15))
+  Requirement already satisfied: psycopg2==2.7.5 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 16))
+  Requirement already satisfied: pycodestyle==2.3.1 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 17))
+  Requirement already satisfied: pyflakes==1.6.0 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 18))
+  Requirement already satisfied: python-dateutil==2.7.3 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 19))
+  Requirement already satisfied: PyYAML==3.13 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 20))
+  Requirement already satisfied: semantic-version==2.5.0 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 21))
+  Requirement already satisfied: six==1.11.0 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 22))
+  Requirement already satisfied: SQLAlchemy==1.2.10 in /opt/python/run/venv/lib64/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 23))
+  Requirement already satisfied: tabulate==0.7.5 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 24))
+  Requirement already satisfied: termcolor==1.1.0 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 25))
+  Requirement already satisfied: Werkzeug==0.14.1 in /opt/python/run/venv/lib/python3.6/site-packages (from -r /opt/python/ondeck/app/requirements.txt (line 26))
+  Requirement already satisfied: blessed>=1.9.5 in /opt/python/run/venv/lib/python3.6/site-packages (from awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: docker-compose<1.22.0,>=1.21.2 in /opt/python/run/venv/lib/python3.6/site-packages (from awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: setuptools>=20.0 in /opt/python/run/venv/lib/python3.6/site-packages (from awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: wcwidth>=0.1.4 in /opt/python/run/venv/lib/python3.6/site-packages (from blessed>=1.9.5->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: websocket-client<1.0,>=0.32.0 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: requests!=2.11.0,!=2.12.2,!=2.18.0,<2.19,>=2.6.1 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: docker<4.0,>=3.3.0 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: texttable<0.10,>=0.9.0 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: docopt<0.7,>=0.6.1 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: dockerpty<0.5,>=0.4.1 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: jsonschema<3,>=2.5.1 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: cached-property<2,>=1.2.0 in /opt/python/run/venv/lib/python3.6/site-packages (from docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: idna<2.7,>=2.5 in /opt/python/run/venv/lib/python3.6/site-packages (from requests!=2.11.0,!=2.12.2,!=2.18.0,<2.19,>=2.6.1->docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /opt/python/run/venv/lib/python3.6/site-packages (from requests!=2.11.0,!=2.12.2,!=2.18.0,<2.19,>=2.6.1->docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: certifi>=2017.4.17 in /opt/python/run/venv/lib/python3.6/site-packages (from requests!=2.11.0,!=2.12.2,!=2.18.0,<2.19,>=2.6.1->docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: urllib3<1.23,>=1.21.1 in /opt/python/run/venv/lib/python3.6/site-packages (from requests!=2.11.0,!=2.12.2,!=2.18.0,<2.19,>=2.6.1->docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  Requirement already satisfied: docker-pycreds>=0.3.0 in /opt/python/run/venv/lib/python3.6/site-packages (from docker<4.0,>=3.3.0->docker-compose<1.22.0,>=1.21.2->awsebcli==3.14.3->-r /opt/python/ondeck/app/requirements.txt (line 1))
+  You are using pip version 9.0.1, however version 18.0 is available.
+  You should consider upgrading via the 'pip install --upgrade pip' command.
+[2018-08-24T01:56:04.331Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/AppDeployPreHook/04configen.py] : Starting activity...
+[2018-08-24T01:56:05.566Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/AppDeployPreHook/04configen.py] : Completed activity.
+[2018-08-24T01:56:05.566Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/AppDeployPreHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/pre.
+[2018-08-24T01:56:05.566Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/EbExtensionPostBuild] : Starting activity...
+[2018-08-24T01:56:05.961Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Starting activity...
+[2018-08-24T01:56:05.961Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Completed activity.
+[2018-08-24T01:56:05.976Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/EbExtensionPostBuild] : Completed activity.
+[2018-08-24T01:56:05.976Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/InfraCleanEbextension] : Starting activity...
+[2018-08-24T01:56:05.977Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0/InfraCleanEbextension] : Completed activity. Result:
+  Cleaned ebextensions subdirectories from /opt/python/ondeck/app.
+[2018-08-24T01:56:05.977Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage0] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy stage 0 completed
+[2018-08-24T01:56:05.977Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1] : Starting activity...
+[2018-08-24T01:56:05.977Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook] : Starting activity...
+[2018-08-24T01:56:05.977Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/01flip.py] : Starting activity...
+[2018-08-24T01:56:10.847Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING   pid 20160, uptime 0:00:03
+[2018-08-24T01:56:10.847Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/01stop_xray.sh] : Starting activity...
+[2018-08-24T01:56:10.959Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/01stop_xray.sh] : Completed activity. Result:
+  Executing: if ( initctl status xray | grep start ); then initctl stop xray; fi
+  
+[2018-08-24T01:56:10.959Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/02create_pids_for_monitoring.sh] : Starting activity...
+[2018-08-24T01:56:11.059Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/02create_pids_for_monitoring.sh] : Completed activity. Result:
+  + chmod 0755 /var/run/httpd
+  + /opt/elasticbeanstalk/bin/healthd-track-pidfile --proxy httpd
+  + /opt/elasticbeanstalk/bin/healthd-track-pidfile --name application --location /opt/python/run/supervisord.pid
+[2018-08-24T01:56:11.060Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/02start_xray.sh] : Starting activity...
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook/02start_xray.sh] : Completed activity.
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployEnactHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/enact.
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployPostHook] : Starting activity...
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1/AppDeployPostHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/post.
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AppDeployStage1] : Completed activity. Result:
+  Application version switch - Command CMD-AppDeploy stage 1 completed
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AddonsAfter] : Starting activity...
+[2018-08-24T01:56:11.165Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AddonsAfter/ConfigLogRotation] : Starting activity...
+[2018-08-24T01:56:11.166Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AddonsAfter/ConfigLogRotation/10-config.sh] : Starting activity...
+[2018-08-24T01:56:11.243Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AddonsAfter/ConfigLogRotation/10-config.sh] : Completed activity. Result:
+  Disabled forced hourly log rotation.
+[2018-08-24T01:56:11.243Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AddonsAfter/ConfigLogRotation] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logpublish/hooks/config.
+[2018-08-24T01:56:11.243Z] INFO  [19950] - [Application update app-c244-180823_215601@48/AddonsAfter] : Completed activity.
+[2018-08-24T01:56:11.244Z] INFO  [19950] - [Application update app-c244-180823_215601@48] : Completed activity. Result:
+  Application update - Command CMD-AppDeploy succeeded
+[2018-08-24T02:00:02.899Z] INFO  [20526] - [CMD-TailLogs] : Starting activity...
+[2018-08-24T02:00:02.899Z] INFO  [20526] - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2018-08-24T02:00:02.899Z] INFO  [20526] - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2018-08-24T02:00:02.900Z] INFO  [20526] - [CMD-TailLogs/TailLogs] : Starting activity...
+[2018-08-24T02:00:02.900Z] INFO  [20526] - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2018-08-22T22:58:34.128Z] DEBUG [878]   : Running stages of Command CMD-AppDeploy from stage 0 to stage 1...
+[2018-08-22T22:58:34.128Z] INFO  [878]   : Running stage 0 of command CMD-AppDeploy...
+[2018-08-22T22:58:34.128Z] INFO  [878]   : Running leader election...
+[2018-08-22T22:58:34.518Z] INFO  [878]   : Instance is Leader.
+[2018-08-22T22:58:34.519Z] DEBUG [878]   : Loaded 5 actions for stage 0.
+[2018-08-22T22:58:34.519Z] INFO  [878]   : Running 1 of 5 actions: DownloadSourceBundle...
+[2018-08-22T22:58:34.835Z] INFO  [878]   : Running 2 of 5 actions: EbExtensionPreBuild...
+[2018-08-22T22:58:35.245Z] INFO  [878]   : Running 3 of 5 actions: AppDeployPreHook...
+[2018-08-22T22:58:38.184Z] INFO  [878]   : Running 4 of 5 actions: EbExtensionPostBuild...
+[2018-08-22T22:58:38.595Z] INFO  [878]   : Running 5 of 5 actions: InfraCleanEbextension...
+[2018-08-22T22:58:38.596Z] INFO  [878]   : Running stage 1 of command CMD-AppDeploy...
+[2018-08-22T22:58:38.596Z] DEBUG [878]   : Loaded 2 actions for stage 1.
+[2018-08-22T22:58:38.596Z] INFO  [878]   : Running 1 of 2 actions: AppDeployEnactHook...
+[2018-08-22T22:58:47.778Z] INFO  [878]   : Running 2 of 2 actions: AppDeployPostHook...
+[2018-08-22T22:58:47.778Z] INFO  [878]   : Running AddonsAfter for command CMD-AppDeploy...
+[2018-08-22T22:58:47.857Z] INFO  [878]   : Command CMD-AppDeploy succeeded!
+[2018-08-22T22:58:47.857Z] INFO  [878]   : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2018-08-24T01:56:00.587Z] DEBUG [19950] : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-08-24T01:56:00.587Z] DEBUG [19950] : Checking if the command processor should execute...
+[2018-08-24T01:56:00.589Z] DEBUG [19950] : Checking whether the command is applicable to instance (i-0f3f4220b681d7fa9)..
+[2018-08-24T01:56:00.589Z] INFO  [19950] : Command is applicable to this instance (i-0f3f4220b681d7fa9)..
+[2018-08-24T01:56:00.589Z] DEBUG [19950] : Checking if the received command stage is valid..
+[2018-08-24T01:56:00.590Z] INFO  [19950] : No stage_num in command. Valid stage..
+[2018-08-24T01:56:00.590Z] INFO  [19950] : Received command CMD-AppDeploy: {"execution_data"=>"{\"leader_election\":\"true\"}", "instance_ids"=>["i-0f3f4220b681d7fa9"], "data"=>"manifest_1535075757154", "command_name"=>"CMD-AppDeploy", "api_version"=>"1.0", "resource_name"=>"AWSEBAutoScalingGroup", "request_id"=>"faff6e1b-e6f1-48f8-874b-26c5b1ed0d2d"}
+[2018-08-24T01:56:00.590Z] INFO  [19950] : Command processor should execute command.
+[2018-08-24T01:56:00.590Z] DEBUG [19950] : Storing current stage..
+[2018-08-24T01:56:00.590Z] DEBUG [19950] : Stage_num does not exist. Not saving null stage. Returning..
+[2018-08-24T01:56:00.590Z] DEBUG [19950] : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-08-24T01:56:00.590Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2018-08-24T01:56:00.590Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-08-24T01:56:00.591Z] INFO  [19950] : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-08-24T01:56:00.592Z] INFO  [19950] : Updating Command definition of addon logstreaming.
+[2018-08-24T01:56:00.592Z] INFO  [19950] : Updating Command definition of addon logpublish.
+[2018-08-24T01:56:00.592Z] DEBUG [19950] : Refreshing metadata...
+[2018-08-24T01:56:00.983Z] DEBUG [19950] : Refreshed environment metadata.
+[2018-08-24T01:56:00.984Z] INFO  [19950] : Recreated directory /opt/elasticbeanstalk/deploy/configuration/.
+[2018-08-24T01:56:00.984Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_AppSourceUrlFileContent||url..
+[2018-08-24T01:56:00.984Z] INFO  [19950] : Created appsource url file at /opt/elasticbeanstalk/deploy/configuration/appsourceurl.
+[2018-08-24T01:56:00.984Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent..
+[2018-08-24T01:56:00.986Z] INFO  [19950] : Created container config file at /opt/elasticbeanstalk/deploy/configuration/containerconfiguration.
+[2018-08-24T01:56:00.986Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2018-08-24T01:56:00.986Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-08-24T01:56:00.987Z] INFO  [19950] : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-08-24T01:56:00.988Z] INFO  [19950] : Updating Command definition of addon logstreaming.
+[2018-08-24T01:56:00.988Z] INFO  [19950] : Updating Command definition of addon logpublish.
+[2018-08-24T01:56:00.988Z] DEBUG [19950] : Retrieving metadata for key: AWS::CloudFormation::Init||Infra-WriteApplication2||files..
+[2018-08-24T01:56:00.988Z] DEBUG [19950] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||ManifestFileS3Key..
+[2018-08-24T01:56:01.084Z] INFO  [19950] : Loading manifest from bucket 'elasticbeanstalk-us-east-1-472301744577' using computed S3 key 'resources/environments/e-39kf38c6kb/_runtime/versions/manifest_1535075757154'.
+[2018-08-24T01:56:01.150Z] INFO  [19950] : Updated manifest cache: deployment ID 48 and serial 48.
+[2018-08-24T01:56:01.150Z] DEBUG [19950] : Loaded definition of Command CMD-AppDeploy.
+[2018-08-24T01:56:01.150Z] INFO  [19950] : Executing Application update
+[2018-08-24T01:56:01.150Z] INFO  [19950] : Executing command: CMD-AppDeploy...
+[2018-08-24T01:56:01.150Z] INFO  [19950] : Executing command CMD-AppDeploy activities...
+[2018-08-24T01:56:01.150Z] DEBUG [19950] : Setting environment variables..
+[2018-08-24T01:56:01.150Z] INFO  [19950] : Running AddonsBefore for command CMD-AppDeploy...
+[2018-08-24T01:56:01.272Z] DEBUG [19950] : Running stages of Command CMD-AppDeploy from stage 0 to stage 1...
+[2018-08-24T01:56:01.272Z] INFO  [19950] : Running stage 0 of command CMD-AppDeploy...
+[2018-08-24T01:56:01.272Z] INFO  [19950] : Running leader election...
+[2018-08-24T01:56:01.669Z] INFO  [19950] : Instance is Leader.
+[2018-08-24T01:56:01.669Z] DEBUG [19950] : Loaded 5 actions for stage 0.
+[2018-08-24T01:56:01.669Z] INFO  [19950] : Running 1 of 5 actions: DownloadSourceBundle...
+[2018-08-24T01:56:02.170Z] INFO  [19950] : Running 2 of 5 actions: EbExtensionPreBuild...
+[2018-08-24T01:56:02.587Z] INFO  [19950] : Running 3 of 5 actions: AppDeployPreHook...
+[2018-08-24T01:56:05.566Z] INFO  [19950] : Running 4 of 5 actions: EbExtensionPostBuild...
+[2018-08-24T01:56:05.976Z] INFO  [19950] : Running 5 of 5 actions: InfraCleanEbextension...
+[2018-08-24T01:56:05.977Z] INFO  [19950] : Running stage 1 of command CMD-AppDeploy...
+[2018-08-24T01:56:05.977Z] DEBUG [19950] : Loaded 2 actions for stage 1.
+[2018-08-24T01:56:05.977Z] INFO  [19950] : Running 1 of 2 actions: AppDeployEnactHook...
+[2018-08-24T01:56:11.165Z] INFO  [19950] : Running 2 of 2 actions: AppDeployPostHook...
+[2018-08-24T01:56:11.165Z] INFO  [19950] : Running AddonsAfter for command CMD-AppDeploy...
+[2018-08-24T01:56:11.243Z] INFO  [19950] : Command CMD-AppDeploy succeeded!
+[2018-08-24T01:56:11.244Z] INFO  [19950] : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2018-08-24T02:00:02.893Z] DEBUG [20526] : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-08-24T02:00:02.893Z] DEBUG [20526] : Checking if the command processor should execute...
+[2018-08-24T02:00:02.896Z] DEBUG [20526] : Checking whether the command is applicable to instance (i-0f3f4220b681d7fa9)..
+[2018-08-24T02:00:02.896Z] INFO  [20526] : Command is applicable to this instance (i-0f3f4220b681d7fa9)..
+[2018-08-24T02:00:02.896Z] DEBUG [20526] : Checking if the received command stage is valid..
+[2018-08-24T02:00:02.896Z] INFO  [20526] : No stage_num in command. Valid stage..
+[2018-08-24T02:00:02.896Z] INFO  [20526] : Received command CMD-TailLogs: {"execution_data"=>"*", "instance_ids"=>["i-0f3f4220b681d7fa9"], "data"=>"379002a0-a26c-4359-8a94-c0ab21dfcdb3", "command_name"=>"CMD-TailLogs", "api_version"=>"1.0", "resource_name"=>"AWSEBAutoScalingGroup", "request_id"=>"379002a0-a26c-4359-8a94-c0ab21dfcdb3"}
+[2018-08-24T02:00:02.896Z] INFO  [20526] : Command processor should execute command.
+[2018-08-24T02:00:02.896Z] DEBUG [20526] : Storing current stage..
+[2018-08-24T02:00:02.896Z] DEBUG [20526] : Stage_num does not exist. Not saving null stage. Returning..
+[2018-08-24T02:00:02.896Z] DEBUG [20526] : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2018-08-24T02:00:02.896Z] DEBUG [20526] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2018-08-24T02:00:02.897Z] DEBUG [20526] : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2018-08-24T02:00:02.897Z] INFO  [20526] : Found enabled addons: ["logstreaming", "logpublish"].
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Updating Command definition of addon logstreaming.
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Updating Command definition of addon logpublish.
+[2018-08-24T02:00:02.899Z] DEBUG [20526] : Loaded definition of Command CMD-TailLogs.
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Executing CMD-TailLogs
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Executing command: CMD-TailLogs...
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Executing command CMD-TailLogs activities...
+[2018-08-24T02:00:02.899Z] DEBUG [20526] : Setting environment variables..
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Running AddonsBefore for command CMD-TailLogs...
+[2018-08-24T02:00:02.899Z] DEBUG [20526] : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2018-08-24T02:00:02.899Z] INFO  [20526] : Running stage 0 of command CMD-TailLogs...
+[2018-08-24T02:00:02.900Z] DEBUG [20526] : Loaded 1 actions for stage 0.
+[2018-08-24T02:00:02.900Z] INFO  [20526] : Running 1 of 1 actions: TailLogs...
+
+
+
