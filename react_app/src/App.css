@@ -413,3 +413,54 @@ Visible for SM or bigger
     opacity: 0.01;
     transition: opacity 500ms ease-in;
 }
+
+.home-logo {
+    margin: 0 auto !important;
+}
+
+@media only screen and (max-width: 475px) {
+    .HomeApp {
+        flex: none;
+        margin-top: 30%
+    }
+
+    .lets-get-a-quote {
+        margin: 20px auto !important;
+    }
+
+    .separator {
+        margin: 20px auto !important;
+        width: 40% !important;
+    }
+
+    .inputField {
+        margin: 10px auto !important;
+    }
+
+    .buttonField {
+        margin: 10px auto !important;
+    }
+
+    .App-footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .HomeApp {
+        flex: none;
+        margin-top: 10%
+    }
+
+    .buttonField {
+        margin: 0 auto 15px auto !important;
+    }
+
+    .App-footer button {
+        margin-bottom: 10px !important
+    }
+}

@@ -176,7 +176,7 @@ class Home extends Component {
         <div className={classes.fullScreen} style={{'background': background}}/>
         <Grid container spacing={0} className={classes.homeHeader}>
           <Grid item xs={12}>
-            <Toolbar>
+            <Toolbar style={{'height': 56, 'min-height': 56}}>
               <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
                 <MenuIcon/>
               </IconButton>
@@ -184,16 +184,16 @@ class Home extends Component {
           </Grid>
         </Grid>
         <Grid container spacing={0} className="HomeApp" justify='center'>
-          <Grid item xs={9} sm={10} md={8}>
-            <img src={logo} alt="Stable Insurance" className={classes.logo}/>
+          <Grid item xs={9} sm={10} md={8} style={{'height': 50}}>
+            <img src={logo} alt="Stable Insurance" className={`${classes.logo} home-logo`}/>
           </Grid>
           <Grid item xs={9} sm={10} md={8}>
             <Hidden xsDown>
               <p className={classes.textSubTitle}>Lets get you a TLC Insurance Quote!</p>
             </Hidden>
             <Hidden smUp>
-              <p className={classes.text}>Lets get you a Quote!</p>
-              <hr className={classes.separator}/>
+              <p className={`${classes.text} lets-get-a-quote`}>Lets get you a Quote!</p>
+              <hr className={`${classes.separator} separator`}/>
             </Hidden>
           </Grid>
           <Grid item xs={9} sm={10} md={9}>
@@ -214,6 +214,7 @@ class Home extends Component {
           </Hidden>
           <Grid item xs={9} sm={4} md={3}>
             <TextField
+              className={`inputField`}
               placeholder="Enter TLC License Number"
               value={this.state.tlc}
               onChange={this.handleChange}
@@ -238,7 +239,7 @@ class Home extends Component {
             <Button variant="contained"
                     fullWidth
                     color="primary"
-                    className={classes.button}
+                    className={` ${classes.button} buttonField`}
                     onClick={this.handleNext}
             >
               Next
