@@ -421,7 +421,7 @@ Visible for SM or bigger
 @media only screen and (max-width: 475px) {
     .HomeApp {
         flex: none;
-        margin-top: 30%
+        margin-top: 15%
     }
 
     .lets-get-a-quote {
