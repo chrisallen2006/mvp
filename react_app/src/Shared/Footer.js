@@ -63,6 +63,7 @@ const ChatIcon = (props) => (
 class Footer extends Component {
 
   onClickBack() {
+    document.getElementById('root').classList.remove('fixedToTop');
     this.props.history.goBack()
   }
 

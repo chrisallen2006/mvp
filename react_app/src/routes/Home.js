@@ -249,7 +249,7 @@ class Home extends Component {
             <Grid item sm={4}/>
           </Hidden>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} className="footer-home">
             <Footer history={this.props.history}/>
           </Grid>
         </Grid>
